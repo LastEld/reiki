@@ -10,53 +10,53 @@
 
 Features users assume exist. Missing these = product feels incomplete or unprofessional.
 
-| Feature | Why Expected | Complexity | Notes |
-|---------|--------------|------------|-------|
-| **Hero section with clear headline** | Users need to understand what you offer within 3 seconds of landing | LOW | Must include: benefit-focused headline, supporting subtext, primary CTA. 83% of traffic is mobile—design mobile-first |
-| **Primary CTA (above fold)** | 53% of users leave if they don't see a clear action within 3 seconds | LOW | Single focused action. Use benefit language ("Start Your Healing Journey") not commands ("Submit"). Sticky/floating CTA for long pages |
-| **Professional practitioner photo** | For wellness services, visitors need to see who they'll work with. Photo builds trust and makes service feel real | LOW | Real photo beats stock imagery. Show practitioner in treatment setting without excessive New Age artifacts |
-| **Service description** | Users expect clear explanation of what they're booking | MEDIUM | Must include: what happens in session, duration, setting (clothed, light touch, table/chair), what to expect. Avoid jargon—use simple language |
-| **Pricing information** | 93% of users research pricing before booking. Hiding pricing = distrust | MEDIUM | Display 2-4 tiers if offering packages. Include "best for" labels. Consider monthly/per-session toggle. Be transparent—avoid "Contact for pricing" |
-| **Contact information** | Phone number and location anchor service in real world, building credibility | LOW | Include: phone (click-to-call), general location (town/neighborhood), email. Real details signal legitimacy |
-| **Mobile responsiveness** | 83% of visits are mobile. Non-responsive = 53% bounce rate | MEDIUM | Must work on all devices. Test with actual content (translations can break layouts). Forms must be easy on mobile |
-| **Fast page load (<3s)** | 53% abandon if load time >3 seconds. 1-second delay = conversion drop | MEDIUM | Compress images (WebP/AVIF), use CDN, lazy load below fold, minify CSS/JS. Target <3s on mobile |
-| **Basic trust signals** | Users need proof you're legitimate before booking wellness services | LOW-MEDIUM | Include: credentials/certifications, years of experience, professional associations. Avoid over-claiming |
-| **FAQ section** | Reduces objections and support burden. Expected for service businesses | LOW-MEDIUM | Address common concerns: safety, what to wear, cancellation, first-timer questions. Use FAQPage schema for SEO |
+| Feature                              | Why Expected                                                                                                      | Complexity | Notes                                                                                                                                              |
+| ------------------------------------ | ----------------------------------------------------------------------------------------------------------------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Hero section with clear headline** | Users need to understand what you offer within 3 seconds of landing                                               | LOW        | Must include: benefit-focused headline, supporting subtext, primary CTA. 83% of traffic is mobile—design mobile-first                              |
+| **Primary CTA (above fold)**         | 53% of users leave if they don't see a clear action within 3 seconds                                              | LOW        | Single focused action. Use benefit language ("Start Your Healing Journey") not commands ("Submit"). Sticky/floating CTA for long pages             |
+| **Professional practitioner photo**  | For wellness services, visitors need to see who they'll work with. Photo builds trust and makes service feel real | LOW        | Real photo beats stock imagery. Show practitioner in treatment setting without excessive New Age artifacts                                         |
+| **Service description**              | Users expect clear explanation of what they're booking                                                            | MEDIUM     | Must include: what happens in session, duration, setting (clothed, light touch, table/chair), what to expect. Avoid jargon—use simple language     |
+| **Pricing information**              | 93% of users research pricing before booking. Hiding pricing = distrust                                           | MEDIUM     | Display 2-4 tiers if offering packages. Include "best for" labels. Consider monthly/per-session toggle. Be transparent—avoid "Contact for pricing" |
+| **Contact information**              | Phone number and location anchor service in real world, building credibility                                      | LOW        | Include: phone (click-to-call), general location (town/neighborhood), email. Real details signal legitimacy                                        |
+| **Mobile responsiveness**            | 83% of visits are mobile. Non-responsive = 53% bounce rate                                                        | MEDIUM     | Must work on all devices. Test with actual content (translations can break layouts). Forms must be easy on mobile                                  |
+| **Fast page load (<3s)**             | 53% abandon if load time >3 seconds. 1-second delay = conversion drop                                             | MEDIUM     | Compress images (WebP/AVIF), use CDN, lazy load below fold, minify CSS/JS. Target <3s on mobile                                                    |
+| **Basic trust signals**              | Users need proof you're legitimate before booking wellness services                                               | LOW-MEDIUM | Include: credentials/certifications, years of experience, professional associations. Avoid over-claiming                                           |
+| **FAQ section**                      | Reduces objections and support burden. Expected for service businesses                                            | LOW-MEDIUM | Address common concerns: safety, what to wear, cancellation, first-timer questions. Use FAQPage schema for SEO                                     |
 
 ### Differentiators (Competitive Advantage)
 
 Features that set the product apart. Not required, but valuable for premium positioning.
 
-| Feature | Value Proposition | Complexity | Notes |
-|---------|-------------------|------------|-------|
-| **Client testimonials/reviews** | 93% rely on reviews to make purchasing decisions. Social proof is the #1 trust builder | MEDIUM | Display 3-5 specific testimonials (name, photo optional, specific outcome). Consider star ratings from Google/Trustpilot. Dynamic testimonial carousel for variety |
-| **Before/after or results showcase** | For wellness, showing transformation builds credibility and desire | MEDIUM | Use specific client stories (with permission). For Reiki: energy levels, pain reduction, stress relief. Quantify when possible |
-| **Integrated appointment booking** | Self-service booking increases conversions 20-40% and saves 45% admin time | HIGH | Calendly, SimplyBook.me, Acuity Scheduling. Must show real-time availability, handle time zones, send auto-reminders. Reduces no-shows by 30% |
-| **Process explanation (step-by-step)** | Demystifies the experience, reduces anxiety for first-timers | LOW-MEDIUM | Show 3-5 steps: booking → arrival → session → follow-up. Use visuals or icons. Builds confidence |
-| **Video introduction (30s-2min)** | Video can increase conversions up to 86% and time on page | MEDIUM | Practitioner introduction, treatment room tour, what to expect. Must have captions. Keep under 2 minutes. Shows personality |
-| **Premium animations/micro-interactions** | Signals quality. Apps with good motion see 15-20% longer sessions | MEDIUM-HIGH | Functional animations only (200-500ms duration). Examples: hover states, form validation, scroll progress, subtle transitions. Avoid decoration-only animations |
-| **Multi-language support (i18n)** | Expands market, shows inclusivity. Essential if serving diverse community | HIGH | Use react-i18next or similar. Lazy load translations (40% bundle reduction). Provide language switcher. Include hreflang tags for SEO. Professional translation for key pages |
-| **Educational content/blog section** | Positions practitioner as expert. Supports SEO and community engagement | MEDIUM | Wellness-specific content: "What is Reiki?", "Benefits of Energy Healing", preparation guides. Drives organic traffic |
-| **AI-powered personalization** | Dynamic content can lift conversions 40% | HIGH | Show different testimonials, benefits, or CTAs based on visitor segment. Requires tracking and content variants |
-| **Transparent disclaimers** | For alternative wellness, this builds trust and legal protection | LOW | Clear statements: complementary to medical care, not replacement. Shows ethical practice |
-| **Payment integration** | Accept deposits or full payment at booking. Reduces no-shows | MEDIUM | Stripe, Square, or booking platform native. Consider deposit requirement for appointments |
+| Feature                                   | Value Proposition                                                                      | Complexity  | Notes                                                                                                                                                                         |
+| ----------------------------------------- | -------------------------------------------------------------------------------------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Client testimonials/reviews**           | 93% rely on reviews to make purchasing decisions. Social proof is the #1 trust builder | MEDIUM      | Display 3-5 specific testimonials (name, photo optional, specific outcome). Consider star ratings from Google/Trustpilot. Dynamic testimonial carousel for variety            |
+| **Before/after or results showcase**      | For wellness, showing transformation builds credibility and desire                     | MEDIUM      | Use specific client stories (with permission). For Reiki: energy levels, pain reduction, stress relief. Quantify when possible                                                |
+| **Integrated appointment booking**        | Self-service booking increases conversions 20-40% and saves 45% admin time             | HIGH        | Calendly, SimplyBook.me, Acuity Scheduling. Must show real-time availability, handle time zones, send auto-reminders. Reduces no-shows by 30%                                 |
+| **Process explanation (step-by-step)**    | Demystifies the experience, reduces anxiety for first-timers                           | LOW-MEDIUM  | Show 3-5 steps: booking → arrival → session → follow-up. Use visuals or icons. Builds confidence                                                                              |
+| **Video introduction (30s-2min)**         | Video can increase conversions up to 86% and time on page                              | MEDIUM      | Practitioner introduction, treatment room tour, what to expect. Must have captions. Keep under 2 minutes. Shows personality                                                   |
+| **Premium animations/micro-interactions** | Signals quality. Apps with good motion see 15-20% longer sessions                      | MEDIUM-HIGH | Functional animations only (200-500ms duration). Examples: hover states, form validation, scroll progress, subtle transitions. Avoid decoration-only animations               |
+| **Multi-language support (i18n)**         | Expands market, shows inclusivity. Essential if serving diverse community              | HIGH        | Use react-i18next or similar. Lazy load translations (40% bundle reduction). Provide language switcher. Include hreflang tags for SEO. Professional translation for key pages |
+| **Educational content/blog section**      | Positions practitioner as expert. Supports SEO and community engagement                | MEDIUM      | Wellness-specific content: "What is Reiki?", "Benefits of Energy Healing", preparation guides. Drives organic traffic                                                         |
+| **AI-powered personalization**            | Dynamic content can lift conversions 40%                                               | HIGH        | Show different testimonials, benefits, or CTAs based on visitor segment. Requires tracking and content variants                                                               |
+| **Transparent disclaimers**               | For alternative wellness, this builds trust and legal protection                       | LOW         | Clear statements: complementary to medical care, not replacement. Shows ethical practice                                                                                      |
+| **Payment integration**                   | Accept deposits or full payment at booking. Reduces no-shows                           | MEDIUM      | Stripe, Square, or booking platform native. Consider deposit requirement for appointments                                                                                     |
 
 ### Anti-Features (Commonly Requested, Often Problematic)
 
 Features that seem good but create problems. Avoid these to prevent over-engineering.
 
-| Feature | Why Requested | Why Problematic | Alternative |
-|---------|---------------|-----------------|-------------|
-| **Complex multi-step forms** | Feels thorough, collects lots of data | Form abandonment increases 20% per field. For wellness, 3-5 fields MAX | Use progressive disclosure. Ask critical info only. Collect details via email after booking |
-| **Auto-playing background videos** | Looks premium, creates atmosphere | Kills mobile performance, annoys users, accessibility issues. Wastes bandwidth | Use static hero image with optional play button for video. Or subtle looping animation (optimized) |
-| **Multiple competing CTAs** | Want to give options | Confuses users, reduces conversions. Analysis paralysis | One primary CTA per section. Secondary actions should be visually distinct (text link vs button) |
-| **Excessive navigation** | Users want to explore | For landing pages, navigation is an exit opportunity. Reduces focus on conversion | Minimal navigation or none. Use anchor links to sections. Single-page flow preferred |
-| **Real-time everything** | Feels modern and interactive | Adds complexity without value. Overkill for landing pages | Real-time only for booking calendar. Static content is fine for descriptions, pricing, FAQs |
-| **Chat widgets (auto-popup)** | Capture leads, answer questions | Intrusive, annoying, hurts mobile UX. Often ignored | Use contact form or booking link. If chat needed, make it opt-in (small icon, no popup) |
-| **Overly decorative animations** | Looks cool, shows off design | Performance impact, distraction from message, accessibility issues | Use functional micro-interactions only. Animation should communicate state/feedback, not decorate |
-| **Social media feeds** | Shows activity, community | Distracts from main CTA, takes users off-site, performance hit | Use curated testimonials instead. Link to social in footer only |
-| **Automatic language detection** | Convenience for international users | Often wrong (VPN, travel), frustrating when incorrect | Provide visible language switcher. Remember preference. Never force without option to change |
-| **Image galleries/carousels** | Show multiple photos of space | Auto-rotating carousels reduce engagement. Users hate losing control | Use static image grid or user-controlled carousel. No auto-advance |
+| Feature                            | Why Requested                         | Why Problematic                                                                   | Alternative                                                                                        |
+| ---------------------------------- | ------------------------------------- | --------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| **Complex multi-step forms**       | Feels thorough, collects lots of data | Form abandonment increases 20% per field. For wellness, 3-5 fields MAX            | Use progressive disclosure. Ask critical info only. Collect details via email after booking        |
+| **Auto-playing background videos** | Looks premium, creates atmosphere     | Kills mobile performance, annoys users, accessibility issues. Wastes bandwidth    | Use static hero image with optional play button for video. Or subtle looping animation (optimized) |
+| **Multiple competing CTAs**        | Want to give options                  | Confuses users, reduces conversions. Analysis paralysis                           | One primary CTA per section. Secondary actions should be visually distinct (text link vs button)   |
+| **Excessive navigation**           | Users want to explore                 | For landing pages, navigation is an exit opportunity. Reduces focus on conversion | Minimal navigation or none. Use anchor links to sections. Single-page flow preferred               |
+| **Real-time everything**           | Feels modern and interactive          | Adds complexity without value. Overkill for landing pages                         | Real-time only for booking calendar. Static content is fine for descriptions, pricing, FAQs        |
+| **Chat widgets (auto-popup)**      | Capture leads, answer questions       | Intrusive, annoying, hurts mobile UX. Often ignored                               | Use contact form or booking link. If chat needed, make it opt-in (small icon, no popup)            |
+| **Overly decorative animations**   | Looks cool, shows off design          | Performance impact, distraction from message, accessibility issues                | Use functional micro-interactions only. Animation should communicate state/feedback, not decorate  |
+| **Social media feeds**             | Shows activity, community             | Distracts from main CTA, takes users off-site, performance hit                    | Use curated testimonials instead. Link to social in footer only                                    |
+| **Automatic language detection**   | Convenience for international users   | Often wrong (VPN, travel), frustrating when incorrect                             | Provide visible language switcher. Remember preference. Never force without option to change       |
+| **Image galleries/carousels**      | Show multiple photos of space         | Auto-rotating carousels reduce engagement. Users hate losing control              | Use static image grid or user-controlled carousel. No auto-advance                                 |
 
 ## Feature Dependencies
 
@@ -145,30 +145,31 @@ Features to defer until product-market fit is established and scale demands them
 
 ## Feature Prioritization Matrix
 
-| Feature | User Value | Implementation Cost | Priority |
-|---------|------------|---------------------|----------|
-| Hero section with CTA | HIGH | LOW | P1 |
-| Mobile responsiveness | HIGH | MEDIUM | P1 |
-| Fast page load | HIGH | MEDIUM | P1 |
-| Service description | HIGH | LOW | P1 |
-| Pricing display | HIGH | MEDIUM | P1 |
-| Practitioner photo | HIGH | LOW | P1 |
-| Contact information | HIGH | LOW | P1 |
-| Basic trust signals | HIGH | LOW | P1 |
-| FAQ section | HIGH | LOW-MEDIUM | P1 |
-| Contact/booking form | HIGH | LOW-MEDIUM | P1 |
-| Client testimonials | HIGH | MEDIUM | P2 |
-| Integrated booking system | HIGH | HIGH | P2 |
-| Video introduction | MEDIUM | MEDIUM | P2 |
-| Process explanation | MEDIUM | LOW-MEDIUM | P2 |
-| Payment integration | MEDIUM | MEDIUM | P2 |
-| Results showcase | MEDIUM | MEDIUM | P2 |
-| Educational content | MEDIUM | MEDIUM | P2 |
-| Premium animations | LOW-MEDIUM | MEDIUM-HIGH | P3 |
-| Multi-language support | VARIES | HIGH | P3 |
-| AI personalization | MEDIUM | HIGH | P3 |
+| Feature                   | User Value | Implementation Cost | Priority |
+| ------------------------- | ---------- | ------------------- | -------- |
+| Hero section with CTA     | HIGH       | LOW                 | P1       |
+| Mobile responsiveness     | HIGH       | MEDIUM              | P1       |
+| Fast page load            | HIGH       | MEDIUM              | P1       |
+| Service description       | HIGH       | LOW                 | P1       |
+| Pricing display           | HIGH       | MEDIUM              | P1       |
+| Practitioner photo        | HIGH       | LOW                 | P1       |
+| Contact information       | HIGH       | LOW                 | P1       |
+| Basic trust signals       | HIGH       | LOW                 | P1       |
+| FAQ section               | HIGH       | LOW-MEDIUM          | P1       |
+| Contact/booking form      | HIGH       | LOW-MEDIUM          | P1       |
+| Client testimonials       | HIGH       | MEDIUM              | P2       |
+| Integrated booking system | HIGH       | HIGH                | P2       |
+| Video introduction        | MEDIUM     | MEDIUM              | P2       |
+| Process explanation       | MEDIUM     | LOW-MEDIUM          | P2       |
+| Payment integration       | MEDIUM     | MEDIUM              | P2       |
+| Results showcase          | MEDIUM     | MEDIUM              | P2       |
+| Educational content       | MEDIUM     | MEDIUM              | P2       |
+| Premium animations        | LOW-MEDIUM | MEDIUM-HIGH         | P3       |
+| Multi-language support    | VARIES     | HIGH                | P3       |
+| AI personalization        | MEDIUM     | HIGH                | P3       |
 
 **Priority key:**
+
 - **P1 (Must have for launch):** Core credibility and conversion features. Without these, landing page feels incomplete or unprofessional
 - **P2 (Should have, add when possible):** Competitive advantages. Add these as you validate and grow
 - **P3 (Nice to have, future consideration):** Polish and scale features. Add only after core metrics are optimized
@@ -214,16 +215,16 @@ Alternative wellness (Reiki, energy healing) requires extra trust signals due to
 
 ### Essential Trust Elements
 
-| Element | Purpose | Implementation |
-|---------|---------|----------------|
-| **Professional credentials** | Shows legitimate training | List certifications (Reiki Master, lineage), professional memberships (IARP, CRA), continuing education |
-| **Years of experience** | Establishes expertise | "Practicing since [year]" or "[X] sessions completed" |
-| **Practitioner photo** | Humanizes service, shows you're real | Professional but approachable. In treatment setting. Avoid excessive spiritual imagery |
-| **Clear scope statements** | Sets realistic expectations | "Complementary to medical care, not a replacement" |
-| **Transparent disclaimers** | Legal protection + shows ethics | "Results vary. Not a substitute for medical treatment." Footer or dedicated section |
-| **Client testimonials** | Third-party validation | Specific outcomes ("reduced back pain after 3 sessions"), names (first name + last initial OK), photos optional |
-| **Privacy/confidentiality** | Shows professionalism | "Sessions are confidential. Health information protected." |
-| **Cancellation policy** | Shows structure, respect for time | 24-48 hour notice required. Be fair but firm |
+| Element                      | Purpose                              | Implementation                                                                                                  |
+| ---------------------------- | ------------------------------------ | --------------------------------------------------------------------------------------------------------------- |
+| **Professional credentials** | Shows legitimate training            | List certifications (Reiki Master, lineage), professional memberships (IARP, CRA), continuing education         |
+| **Years of experience**      | Establishes expertise                | "Practicing since [year]" or "[X] sessions completed"                                                           |
+| **Practitioner photo**       | Humanizes service, shows you're real | Professional but approachable. In treatment setting. Avoid excessive spiritual imagery                          |
+| **Clear scope statements**   | Sets realistic expectations          | "Complementary to medical care, not a replacement"                                                              |
+| **Transparent disclaimers**  | Legal protection + shows ethics      | "Results vary. Not a substitute for medical treatment." Footer or dedicated section                             |
+| **Client testimonials**      | Third-party validation               | Specific outcomes ("reduced back pain after 3 sessions"), names (first name + last initial OK), photos optional |
+| **Privacy/confidentiality**  | Shows professionalism                | "Sessions are confidential. Health information protected."                                                      |
+| **Cancellation policy**      | Shows structure, respect for time    | 24-48 hour notice required. Be fair but firm                                                                    |
 
 ### Trust-Damaging Elements to Avoid
 
@@ -239,11 +240,13 @@ Alternative wellness (Reiki, energy healing) requires extra trust signals due to
 **What works:** Clean, professional design + calm aesthetic + clear explanations + realistic benefits + credentials + testimonials
 
 **Example messaging:**
+
 - ✅ "Reiki promotes relaxation and stress reduction through gentle energy work"
 - ✅ "Clients report feeling more calm and centered after sessions"
 - ✅ "Reiki complements your wellness routine and medical care"
 
 **Not:**
+
 - ❌ "Reiki heals all disease by balancing your chakras and activating dormant DNA"
 
 ## Conversion Optimization Features
@@ -288,27 +291,29 @@ Based on 2026 best practices, these features directly impact conversion rates.
 
 Analysis of premium wellness landing pages (general wellness, yoga, holistic health).
 
-| Feature | Common Pattern | Premium Touch | Our Approach (Reiki) |
-|---------|---------------|---------------|---------------------|
-| **Hero section** | Generic headline + stock photo | Practitioner in space + specific outcome promise | Real practitioner photo + "Experience Deep Relaxation Through Reiki Energy Healing" |
-| **Service description** | List of services | Story-based explanation of experience | Step-by-step session flow. "What to expect" focus |
-| **Pricing** | "Contact us" or hidden | 2-4 tiers, transparent, includes what's in each | 3 tiers: Single Session, 3-Pack, Monthly. Clear pricing |
-| **Booking** | Contact form only | Integrated calendar (Calendly/Acuity) | MVP: Contact form. v1.x: Integrated booking |
-| **Trust signals** | Generic "certified" | Specific credentials + lineage + testimonials | Reiki Master certification, IARP member, 8+ years, client testimonials |
-| **FAQ** | Basic or missing | Comprehensive, addresses skepticism | Address: "What is Reiki?", "Is it religious?", "What if I'm skeptical?", "What to wear?" |
-| **Design aesthetic** | Purple/cosmic or medical sterile | Calming earth tones, clean, professional | Muted nature tones, clean layout, minimal spiritual imagery |
-| **Video** | Stock or missing | Practitioner intro + space tour | v1.x: 90-second intro explaining Reiki + showing treatment room |
-| **Process explanation** | Missing or vague | Visual step-by-step | Icons: Book → Arrive → Relax → Session → Follow-up |
-| **Multi-language** | English only | 2-3 languages with switcher | v2+: Spanish if market demands. Not MVP priority |
+| Feature                 | Common Pattern                   | Premium Touch                                    | Our Approach (Reiki)                                                                     |
+| ----------------------- | -------------------------------- | ------------------------------------------------ | ---------------------------------------------------------------------------------------- |
+| **Hero section**        | Generic headline + stock photo   | Practitioner in space + specific outcome promise | Real practitioner photo + "Experience Deep Relaxation Through Reiki Energy Healing"      |
+| **Service description** | List of services                 | Story-based explanation of experience            | Step-by-step session flow. "What to expect" focus                                        |
+| **Pricing**             | "Contact us" or hidden           | 2-4 tiers, transparent, includes what's in each  | 3 tiers: Single Session, 3-Pack, Monthly. Clear pricing                                  |
+| **Booking**             | Contact form only                | Integrated calendar (Calendly/Acuity)            | MVP: Contact form. v1.x: Integrated booking                                              |
+| **Trust signals**       | Generic "certified"              | Specific credentials + lineage + testimonials    | Reiki Master certification, IARP member, 8+ years, client testimonials                   |
+| **FAQ**                 | Basic or missing                 | Comprehensive, addresses skepticism              | Address: "What is Reiki?", "Is it religious?", "What if I'm skeptical?", "What to wear?" |
+| **Design aesthetic**    | Purple/cosmic or medical sterile | Calming earth tones, clean, professional         | Muted nature tones, clean layout, minimal spiritual imagery                              |
+| **Video**               | Stock or missing                 | Practitioner intro + space tour                  | v1.x: 90-second intro explaining Reiki + showing treatment room                          |
+| **Process explanation** | Missing or vague                 | Visual step-by-step                              | Icons: Book → Arrive → Relax → Session → Follow-up                                       |
+| **Multi-language**      | English only                     | 2-3 languages with switcher                      | v2+: Spanish if market demands. Not MVP priority                                         |
 
 ## Sources
 
 ### Premium Landing Page Features & Best Practices
+
 - [40 best landing page examples of 2026 (Unbounce)](https://unbounce.com/landing-page-examples/best-landing-page-examples/)
 - [Top 16 Wellness Website Examples for 2026 (Hostinger)](https://www.hostinger.com/tutorials/wellness-website-examples)
 - [Wellness websites - 40+ Best Wellness Web Design Ideas 2026 (99designs)](https://99designs.com/inspiration/websites/wellness)
 
 ### Conversion Optimization & Landing Page Best Practices
+
 - [12 Landing Page Best Practices of 2026 (Leadfeeder)](https://www.leadfeeder.com/blog/landing-pages-convert/)
 - [11 Landing Page Best Practices (2026) (involve.me)](https://www.involve.me/blog/landing-page-best-practices)
 - [Landing Page Optimization (LPO): An Ultimate Guide [2026] (VWO)](https://vwo.com/landing-page-optimization/)
@@ -317,49 +322,58 @@ Analysis of premium wellness landing pages (general wellness, yoga, holistic hea
 - [Landing Page Best Practices For Higher Conversions [2026] (Moosend)](https://moosend.com/blog/landing-page-best-practices/)
 
 ### Trust Signals & Booking Integration
+
 - [Landing page trust signals that multiply booking rates (Movers Development)](https://moversdev.com/landing-page-trust-signals-that-multiply-booking-rates/)
 - [Communicating Reiki Healing: 5 Reiki Website Must-Haves & 3 No-Nos (Reiki in Medicine)](https://reikiinmedicine.org/communicating-reiki/reiki-healing-online/)
 - [Boost Your Reiki Practice: Essential Tips to Attract Clients (Massage Liability Insurance Group)](https://www.massageliabilityinsurancegroup.com/reiki/practitioner/start/learn/clients/)
 
 ### Booking & Scheduling Systems
+
 - [Appointment booking landing pages (Zoho Bookings)](https://www.zoho.com/landingpage/appointments-booking.html)
 - [How to Build an Appointment Booking Landing Page (Bitly)](https://bitly.com/blog/steps-for-building-an-appointment-booking-landing-page/)
 - [The best appointment schedulers and booking apps for small business in 2026 (SuperSaaS)](https://blog.supersaas.com/best_booking_apps_small_business)
 - [5 Best Website Builders to Book Appointments In 2026 (Emergent)](https://emergent.sh/learn/best-website-builders-to-book-appointments)
 
 ### Anti-Patterns & Common Mistakes
+
 - [13 common landing page mistakes in 2026 and how to fix (Zoho)](https://www.zoho.com/landingpage/landing-page-mistakes.html)
 - [10 Landing Page Mistakes You Should Avoid in 2026 (Moosend)](https://moosend.com/blog/landing-page-mistakes/)
 - [5 Landing Page Mistakes You Want to Avoid (Adcore Blog)](https://www.adcore.com/blog/5-landing-page-mistakes-you-want-to-avoid/)
 - [17 Most Common Landing Page Mistakes & How to Fix Them (KlientBoost)](https://www.klientboost.com/landing-pages/landing-page-mistakes/)
 
 ### Premium UX, Animations & Micro-interactions
+
 - [10 SaaS Landing Page Trends for 2026 (SaaSFrame)](https://www.saasframe.io/blog/10-saas-landing-page-trends-for-2026-with-real-examples)
 - [UI/UX Evolution 2026: Micro-Interactions & Motion (PrimoTech)](https://primotech.com/ui-ux-evolution-2026-why-micro-interactions-and-motion-matter-more-than-ever/)
 - [Motion Design & Micro-Interactions in 2026: UX Trends (Techqware)](https://www.techqware.com/blog/motion-design-micro-interactions-what-users-expect)
 - [14 Web Design Trends to Keep up with in 2026 (UXPilot)](https://uxpilot.ai/blogs/web-design-trends-2026)
 
 ### Multi-language & i18n
+
 - [Internationalization (i18n) in React: Complete Guide 2026 (GloryWebs)](https://www.glorywebs.com/blog/internationalization-in-react)
 - [Multi-Language i18n Implementation in React.js Explained (Digittrix)](https://www.digittrix.com/scripts/multi-language-i18n-implementation-in-reactjs)
 - [How to Set Up Multi-Language Support in a Web App with i18n (Medirelay)](https://medirelay.com/blog/130-multi-language-support-i18n/)
 - [Weglot guide | 9 Tips for Designing a Multi Language Website (Weglot)](https://www.weglot.com/guides/multi-language-website)
 
 ### Pricing Display Strategies
+
 - [The Role of Pricing Strategies on Landing Page Conversions (Site123)](https://www.site123.com/learn/the-role-of-pricing-strategies-on-landing-page-conversions)
 - [23 Best Pricing Page Examples to Inspire Your Design (2025) (Tilipman Digital)](https://www.tilipmandigital.com/resource-center/articles/pricing-page-examples)
 
 ### Hero Section & CTA Design
+
 - [The Best CTA Placement Strategies For 2026 Landing Pages (LandingPageFlow)](https://www.landingpageflow.com/post/best-cta-placement-strategies-for-landing-pages)
 - [Website Hero Section Best Practices + Examples (Prismic)](https://prismic.io/blog/website-hero-section)
 - [6 Landing Page CTAs You Can Copy to Inspire Action (ConvertFlow)](https://www.convertflow.com/campaigns/landing-page-cta)
 
 ### Table Stakes vs Differentiators
+
 - [Sequencing Table Stakes vs. Differentiators (Product Teacher)](https://www.productteacher.com/articles/sequencing-table-stakes-and-differentiators)
 - [Table Stakes vs. Differentiators - How to Nail Your Value (WebDesign Phoenix)](https://www.webdesign-phoenix.com/table-stakes-differentiators/)
 - [Table stakes are not differentiators (LinkedIn - Sam Grover)](https://www.linkedin.com/pulse/table-stakes-differentiators-sam-grover)
 
 ---
-*Feature research for: Premium Reiki Landing Page*
-*Researched: 2026-02-10*
-*Confidence: HIGH — Based on 2026 landing page optimization data, wellness industry patterns, booking system integrations, and conversion best practices*
+
+_Feature research for: Premium Reiki Landing Page_
+_Researched: 2026-02-10_
+_Confidence: HIGH — Based on 2026 landing page optimization data, wellness industry patterns, booking system integrations, and conversion best practices_

@@ -54,15 +54,15 @@
 
 ### Component Responsibilities
 
-| Component | Responsibility | Typical Implementation |
-|-----------|----------------|------------------------|
-| **Root Layout** | HTML scaffold, global providers, i18n setup | Server Component with NextIntlClientProvider |
-| **Page Components** | Section composition, static generation | Server Components with async data fetching |
-| **Section Components** | Hero, Features, Testimonials, CTA, Footer | Server Components (static HTML) |
-| **Form Components** | Booking, Contact forms with validation | Client Components with Server Actions |
-| **Animation Wrappers** | Scroll effects, entrance animations | Client Components with Framer Motion |
-| **Server Actions** | Form submission, API integrations | TypeScript functions with validation (Zod) |
-| **Route Handlers** | API endpoints for external services | route.ts files with Web Request/Response APIs |
+| Component              | Responsibility                              | Typical Implementation                        |
+| ---------------------- | ------------------------------------------- | --------------------------------------------- |
+| **Root Layout**        | HTML scaffold, global providers, i18n setup | Server Component with NextIntlClientProvider  |
+| **Page Components**    | Section composition, static generation      | Server Components with async data fetching    |
+| **Section Components** | Hero, Features, Testimonials, CTA, Footer   | Server Components (static HTML)               |
+| **Form Components**    | Booking, Contact forms with validation      | Client Components with Server Actions         |
+| **Animation Wrappers** | Scroll effects, entrance animations         | Client Components with Framer Motion          |
+| **Server Actions**     | Form submission, API integrations           | TypeScript functions with validation (Zod)    |
+| **Route Handlers**     | API endpoints for external services         | route.ts files with Web Request/Response APIs |
 
 ## Recommended Project Structure
 
@@ -149,10 +149,12 @@ src/
 **When to use:** All landing pages, especially static marketing sites
 
 **Trade-offs:**
+
 - ✅ **Pros:** Smaller bundle, better SEO, faster initial load
 - ❌ **Cons:** More planning needed for client/server boundaries
 
 **Example:**
+
 ```typescript
 // app/[locale]/page.tsx (Server Component)
 import Hero from '@/components/sections/Hero'
@@ -181,10 +183,12 @@ export default async function LandingPage() {
 **When to use:** Contact forms, booking forms, newsletter signups
 
 **Trade-offs:**
+
 - ✅ **Pros:** No API routes needed, progressive enhancement, automatic CSRF protection
 - ❌ **Cons:** POST-only, requires understanding of Server/Client boundaries
 
 **Example:**
+
 ```typescript
 // lib/actions/contact.ts (Server Action)
 'use server'
@@ -196,7 +200,7 @@ export async function submitContactForm(formData: FormData) {
   const parsed = contactSchema.safeParse({
     name: formData.get('name'),
     email: formData.get('email'),
-    message: formData.get('message')
+    message: formData.get('message'),
   })
 
   if (!parsed.success) {
@@ -240,10 +244,12 @@ export default function ContactForm() {
 **When to use:** Blog posts, service pages, multi-language pages
 
 **Trade-offs:**
+
 - ✅ **Pros:** CDN-cacheable, instant loads, SEO-friendly
 - ❌ **Cons:** Build time increases, stale data without ISR
 
 **Example:**
+
 ```typescript
 // app/[locale]/page.tsx
 export async function generateStaticParams() {
@@ -270,10 +276,12 @@ export default async function Page({ params }) {
 **When to use:** Hero sections, feature reveals, testimonial carousels
 
 **Trade-offs:**
+
 - ✅ **Pros:** Smooth UX, professional feel, attention-guiding
 - ❌ **Cons:** Adds ~50KB to bundle, must be client-side
 
 **Example:**
+
 ```typescript
 // components/animations/FadeInView.tsx
 'use client'
@@ -319,10 +327,12 @@ export default function Features() {
 **When to use:** Multi-language sites (landing pages, marketing sites)
 
 **Trade-offs:**
+
 - ✅ **Pros:** SEO-friendly URLs, automatic locale detection, type-safe translations
 - ❌ **Cons:** Build complexity, requires middleware, more files
 
 **Example:**
+
 ```typescript
 // i18n/routing.ts
 import { defineRouting } from 'next-intl/routing'
@@ -330,7 +340,7 @@ import { defineRouting } from 'next-intl/routing'
 export const routing = defineRouting({
   locales: ['en', 'es', 'fr'],
   defaultLocale: 'en',
-  localePrefix: 'as-needed' // Don't prefix default locale
+  localePrefix: 'as-needed', // Don't prefix default locale
 })
 ```
 
@@ -402,12 +412,12 @@ export default async function LocaleLayout({ children, params }) {
 
 ## Scaling Considerations
 
-| Scale | Architecture Adjustments |
-|-------|--------------------------|
-| **0-10k visits/month** | Full static generation (SSG), no optimization needed. Deploy to Vercel free tier. |
-| **10k-100k visits/month** | Add ISR for dynamic content, enable image optimization, consider CDN caching headers. Monitor analytics for slow pages. |
-| **100k-1M visits/month** | Implement edge functions for forms, use Vercel Analytics, add database for form submissions instead of email. Consider splitting by locale to different deployments. |
-| **1M+ visits/month** | Consider separate marketing site, implement advanced caching strategies, use edge middleware for geo-routing, monitor performance metrics closely. |
+| Scale                     | Architecture Adjustments                                                                                                                                             |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **0-10k visits/month**    | Full static generation (SSG), no optimization needed. Deploy to Vercel free tier.                                                                                    |
+| **10k-100k visits/month** | Add ISR for dynamic content, enable image optimization, consider CDN caching headers. Monitor analytics for slow pages.                                              |
+| **100k-1M visits/month**  | Implement edge functions for forms, use Vercel Analytics, add database for form submissions instead of email. Consider splitting by locale to different deployments. |
+| **1M+ visits/month**      | Consider separate marketing site, implement advanced caching strategies, use edge middleware for geo-routing, monitor performance metrics closely.                   |
 
 ### Scaling Priorities
 
@@ -427,11 +437,13 @@ export default async function LocaleLayout({ children, params }) {
 **What people do:** Mark all components with `'use client'` by default
 
 **Why it's wrong:**
+
 - Larger JavaScript bundle (slower page loads)
 - No SEO benefits from Server Components
 - Miss out on server-side caching
 
 **Do this instead:**
+
 - Default to Server Components
 - Only use `'use client'` for interactivity (forms, animations, click handlers)
 - Use the "client island" pattern: wrap static server content with small client wrappers
@@ -441,12 +453,14 @@ export default async function LocaleLayout({ children, params }) {
 **What people do:** Create `app/api/contact/route.ts` for every form
 
 **Why it's wrong:**
+
 - Unnecessary complexity for simple forms
 - More files to maintain
 - No progressive enhancement
 - Manual CSRF protection needed
 
 **Do this instead:**
+
 - Use Server Actions for form submissions
 - Only use Route Handlers for webhooks, third-party integrations, or complex API logic
 
@@ -455,11 +469,13 @@ export default async function LocaleLayout({ children, params }) {
 **What people do:** Use `useEffect` to fetch data in Client Components
 
 **Why it's wrong:**
+
 - Waterfalls (wait for JS → fetch → render)
 - No SEO (search engines don't see content)
 - Poor perceived performance
 
 **Do this instead:**
+
 - Fetch data in Server Components (runs on server, pre-rendered)
 - Pass data as props to Client Components
 - Use streaming with `<Suspense>` for slow data
@@ -469,11 +485,13 @@ export default async function LocaleLayout({ children, params }) {
 **What people do:** Apply animations to every element, long duration animations
 
 **Why it's wrong:**
+
 - Annoying for repeat visitors
 - Can delay content visibility (poor UX)
 - Adds unnecessary bundle size
 
 **Do this instead:**
+
 - Use `viewport={{ once: true }}` so animations only run once
 - Keep animations subtle and fast (0.3-0.6s duration)
 - Only animate elements that benefit from attention-guiding
@@ -483,11 +501,13 @@ export default async function LocaleLayout({ children, params }) {
 **What people do:** Put strings directly in JSX instead of using i18n
 
 **Why it's wrong:**
+
 - Hard to add languages later (requires refactoring all components)
 - No centralized translation management
 - Mixing content with code
 
 **Do this instead:**
+
 - Use `next-intl` from the start, even for single-language sites
 - Store all user-facing text in `messages/` JSON files
 - Use translation keys in components: `t('hero.title')`
@@ -496,29 +516,31 @@ export default async function LocaleLayout({ children, params }) {
 
 ### External Services
 
-| Service | Integration Pattern | Notes |
-|---------|---------------------|-------|
-| **Cal.com** | Server Action → API call | Use `@calcom/embed` for calendar embeds, API for availability checks |
-| **Resend** | Server Action → Email API | Best for transactional emails (contact forms, bookings) |
-| **Vercel Analytics** | `<Analytics />` in layout | Auto-collects Web Vitals, custom events with `track()` |
-| **Google Analytics 4** | `@next/third-parties` | Use `GoogleAnalytics` component in layout, track custom events |
-| **Framer Motion** | Client Components only | Import in client islands, use `whileInView` for scroll animations |
+| Service                | Integration Pattern       | Notes                                                                |
+| ---------------------- | ------------------------- | -------------------------------------------------------------------- |
+| **Cal.com**            | Server Action → API call  | Use `@calcom/embed` for calendar embeds, API for availability checks |
+| **Resend**             | Server Action → Email API | Best for transactional emails (contact forms, bookings)              |
+| **Vercel Analytics**   | `<Analytics />` in layout | Auto-collects Web Vitals, custom events with `track()`               |
+| **Google Analytics 4** | `@next/third-parties`     | Use `GoogleAnalytics` component in layout, track custom events       |
+| **Framer Motion**      | Client Components only    | Import in client islands, use `whileInView` for scroll animations    |
 
 ### Internal Boundaries
 
-| Boundary | Communication | Notes |
-|----------|---------------|-------|
-| **Page ↔ Sections** | Props (RSC) | Server Components pass data via props |
-| **Section ↔ Forms** | Props + Server Actions | Forms are client islands, use Server Actions for submission |
-| **Client ↔ Server** | Server Actions | Use `useActionState` for form state, no fetch() needed |
-| **Layout ↔ Pages** | Context providers | Use `NextIntlClientProvider` for i18n, wrap in layout |
-| **Middleware ↔ Pages** | Headers/cookies | Middleware detects locale, sets headers for routing |
+| Boundary               | Communication          | Notes                                                       |
+| ---------------------- | ---------------------- | ----------------------------------------------------------- |
+| **Page ↔ Sections**    | Props (RSC)            | Server Components pass data via props                       |
+| **Section ↔ Forms**    | Props + Server Actions | Forms are client islands, use Server Actions for submission |
+| **Client ↔ Server**    | Server Actions         | Use `useActionState` for form state, no fetch() needed      |
+| **Layout ↔ Pages**     | Context providers      | Use `NextIntlClientProvider` for i18n, wrap in layout       |
+| **Middleware ↔ Pages** | Headers/cookies        | Middleware detects locale, sets headers for routing         |
 
 ## Build Order (Recommended Implementation Sequence)
 
 ### Phase 1: Foundation (Week 1)
+
 **Dependencies:** None
 **Components:**
+
 1. Set up Next.js 15 project with App Router
 2. Configure `next-intl` routing and middleware
 3. Create root layout with i18n providers
@@ -528,8 +550,10 @@ export default async function LocaleLayout({ children, params }) {
 **Rationale:** Must establish routing and i18n architecture before building pages
 
 ### Phase 2: Static Sections (Week 2)
+
 **Dependencies:** Phase 1 (UI components, i18n)
 **Components:**
+
 1. Hero section (Server Component)
 2. Features section (Server Component)
 3. About/Services section (Server Component)
@@ -539,8 +563,10 @@ export default async function LocaleLayout({ children, params }) {
 **Rationale:** Build static sections first (no dependencies on forms/integrations)
 
 ### Phase 3: Forms & Interactivity (Week 3)
+
 **Dependencies:** Phase 2 (sections to integrate forms into)
 **Components:**
+
 1. Contact form (Client Component)
 2. Booking form (Client Component)
 3. Server Actions for form handling
@@ -550,8 +576,10 @@ export default async function LocaleLayout({ children, params }) {
 **Rationale:** Forms depend on sections being in place; Server Actions can be tested independently
 
 ### Phase 4: Animations (Week 4)
+
 **Dependencies:** Phase 2 (sections to animate)
 **Components:**
+
 1. Scroll animation wrappers (`FadeInView`, `SlideInView`)
 2. Animated hero elements
 3. Testimonial carousel/slider
@@ -560,8 +588,10 @@ export default async function LocaleLayout({ children, params }) {
 **Rationale:** Add animations after static content works; easy to wrap existing sections
 
 ### Phase 5: Integrations (Week 5)
+
 **Dependencies:** Phase 3 (forms must work first)
 **Components:**
+
 1. Calendar integration (Cal.com)
 2. Analytics setup (Vercel + GA4)
 3. SEO metadata (Open Graph, Twitter Cards)
@@ -570,8 +600,10 @@ export default async function LocaleLayout({ children, params }) {
 **Rationale:** External integrations depend on forms/pages being functional
 
 ### Phase 6: Polish & Optimization (Week 6)
+
 **Dependencies:** All previous phases
 **Tasks:**
+
 1. Image optimization and lazy loading
 2. Performance audit (Lighthouse)
 3. Accessibility audit (WCAG 2.1)
@@ -591,15 +623,12 @@ export const dynamic = 'force-static' // Force static generation
 export const revalidate = false // Never revalidate (fully static)
 
 export async function generateStaticParams() {
-  return [
-    { locale: 'en' },
-    { locale: 'es' },
-    { locale: 'fr' }
-  ]
+  return [{ locale: 'en' }, { locale: 'es' }, { locale: 'fr' }]
 }
 ```
 
 **Benefits:**
+
 - Fastest possible page loads (CDN-served HTML)
 - Best SEO (pre-rendered content)
 - Lowest hosting costs (no server compute)
@@ -612,11 +641,12 @@ export const revalidate = 3600 // Revalidate every hour
 
 export async function generateStaticParams() {
   const posts = await getPosts()
-  return posts.map(post => ({ slug: post.slug }))
+  return posts.map((post) => ({ slug: post.slug }))
 }
 ```
 
 **Use when:**
+
 - Content updates occasionally (blog posts, testimonials)
 - Want static performance with fresh content
 - Have more pages than practical to build at deploy time
@@ -629,6 +659,7 @@ export const dynamic = 'force-dynamic'
 ```
 
 **Avoid because:**
+
 - Slower (server rendering on every request)
 - Higher costs (compute on every visit)
 - Not necessary for marketing/landing pages
@@ -646,7 +677,7 @@ export async function generateMetadata({ params }): Promise<Metadata> {
   return {
     title: {
       default: t('title'),
-      template: `%s | ${t('siteName')}`
+      template: `%s | ${t('siteName')}`,
     },
     description: t('description'),
     openGraph: {
@@ -656,22 +687,22 @@ export async function generateMetadata({ params }): Promise<Metadata> {
       siteName: t('siteName'),
       images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
       locale: locale,
-      type: 'website'
+      type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
       title: t('title'),
       description: t('description'),
-      images: ['/twitter-image.jpg']
+      images: ['/twitter-image.jpg'],
     },
     alternates: {
       canonical: `https://example.com/${locale}`,
       languages: {
-        'en': '/en',
-        'es': '/es',
-        'fr': '/fr'
-      }
-    }
+        en: '/en',
+        es: '/es',
+        fr: '/fr',
+      },
+    },
   }
 }
 ```
@@ -679,6 +710,7 @@ export async function generateMetadata({ params }): Promise<Metadata> {
 ## Sources
 
 ### Official Documentation (HIGH Confidence)
+
 - [Next.js 15 App Router Documentation](https://nextjs.org/docs/app)
 - [Next.js Project Structure Guide](https://nextjs.org/docs/app/getting-started/project-structure)
 - [Next.js Static Generation with generateStaticParams](https://nextjs.org/docs/app/api-reference/functions/generate-static-params)
@@ -686,31 +718,37 @@ export async function generateMetadata({ params }): Promise<Metadata> {
 - [next-intl Documentation](https://next-intl-docs.vercel.app/)
 
 ### Architecture Patterns (HIGH Confidence)
+
 - [Modern Full Stack Application Architecture Using Next.js 15+](https://softwaremill.com/modern-full-stack-application-architecture-using-next-js-15/)
 - [The Ultimate Guide to Organizing Your Next.js 15 Project Structure](https://www.wisp.blog/blog/the-ultimate-guide-to-organizing-your-nextjs-15-project-structure)
 - [Next.js Architecture in 2026 — Server-First, Client-Islands, and Scalable App Router Patterns](https://www.yogijs.tech/blog/nextjs-project-architecture-app-router)
 - [Next.js 15: App Router — A Complete Senior-Level Guide](https://medium.com/@livenapps/next-js-15-app-router-a-complete-senior-level-guide-0554a2b820f7)
 
 ### Form Handling Best Practices (HIGH Confidence)
+
 - [Next.js 15 Server Actions: Complete Guide with Real Examples (2026)](https://medium.com/@saad.minhas.codes/next-js-15-server-actions-complete-guide-with-real-examples-2026-6320fbfa01c3)
 - [Nextjs 15 — Actions Best Practice](https://medium.com/@lior_amsalem/nextjs-15-actions-best-practice-bf5cc023301e)
 - [Mastering Form Handling in Next.js 15 with Server Actions](https://medium.com/@sankalpa115/mastering-form-handling-in-next-js-15-with-server-actions-react-hook-form-react-query-and-shadcn-108f6863200f)
 
 ### Analytics Integration (MEDIUM Confidence)
+
 - [Next.js Analytics Guide](https://nextjs.org/docs/app/guides/analytics)
 - [How to Add Google Analytics in Next.js 15 App Router](https://www.sujalvanjare.com/blog/how-to-add-google-analytics-nextjs-15)
 - [Vercel Web Analytics Quickstart](https://vercel.com/docs/analytics/quickstart)
 
 ### Animation Best Practices (MEDIUM Confidence)
+
 - [Framer Motion Documentation](https://motion.dev)
 - [Framer Motion Scroll Animations Guide - Next.js, TypeScript & Tailwind](https://jb.desishub.com/blog/framer-motion)
 - [A Beginner's Guide to Framer Motion in React & Next.js](https://medium.com/@cirilptomass/a-beginners-guide-to-framer-motion-in-react-next-js-2378c7c1b20d)
 
 ### Landing Page Patterns (MEDIUM Confidence)
+
 - [Best Next.js Landing Page Layouts for High SaaS Conversions](https://www.zignuts.com/blog/nextjs-landing-page-layouts)
 - [Building a Static Landing Page with Next.js](https://medium.com/@mansour091800/building-a-static-landing-page-with-next-js-af25769ee396)
 
 ---
-*Architecture research for: Premium Reiki Landing Page (Next.js 15)*
-*Researched: 2026-02-10*
-*Research confidence: HIGH (verified via Context7 and official documentation)*
+
+_Architecture research for: Premium Reiki Landing Page (Next.js 15)_
+_Researched: 2026-02-10_
+_Research confidence: HIGH (verified via Context7 and official documentation)_

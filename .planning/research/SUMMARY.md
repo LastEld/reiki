@@ -20,6 +20,7 @@ Key risks center on Next.js 15 gotchas that silently break production: metadata 
 Next.js 15 App Router with React 19 forms the foundation, leveraging Server Components for static content and Server Actions for form handling. This eliminates the need for API routes while providing excellent SEO and performance. TypeScript adds type safety, while Tailwind CSS enables rapid styling with v4's CSS-first approach (fallback to v3 if needed).
 
 **Core technologies:**
+
 - **Next.js 15 + React 19:** App Router with Server Components for server-first rendering and built-in SEO via Metadata API
 - **TypeScript 5.x:** Type safety for scalable codebase with zero-config Next.js integration
 - **Tailwind CSS 4.x/3.x:** Utility-first styling with minimal bundle impact and rapid development
@@ -30,6 +31,7 @@ Next.js 15 App Router with React 19 forms the foundation, leveraging Server Comp
 - **Calendly (react-calendly):** Embedded booking integration avoiding custom calendar logic
 
 **Critical versions:**
+
 - Next.js 15.0.7+ (security fix for secret inlining)
 - Framer Motion 12.x compatible with React 19
 - Cal.com avoided due to Next.js 15 compatibility issues (Feb 2026)
@@ -41,6 +43,7 @@ Next.js 15 App Router with React 19 forms the foundation, leveraging Server Comp
 Landing pages for wellness services follow established patterns. Research shows users expect certain baseline features (table stakes) while competitive advantage comes from polish and trust-building.
 
 **Must have (table stakes):**
+
 - **Hero section with clear CTA** — 53% of users leave if they don't see clear action within 3 seconds
 - **Professional practitioner photo** — Builds trust; visitors need to see who they'll work with
 - **Service description** — Clear explanation of what happens in session, what to expect
@@ -52,6 +55,7 @@ Landing pages for wellness services follow established patterns. Research shows 
 - **Basic trust signals** — Credentials, certifications, years of experience
 
 **Should have (competitive):**
+
 - **Client testimonials** — 93% rely on reviews; social proof is #1 trust builder
 - **Integrated booking system** — Self-service booking increases conversions 20-40%
 - **Video introduction** — Can increase conversions up to 86%; shows personality
@@ -60,12 +64,14 @@ Landing pages for wellness services follow established patterns. Research shows 
 - **Process explanation** — Step-by-step reduces anxiety for first-timers
 
 **Defer (v2+):**
+
 - **Multi-language support** — High complexity; only if serving multilingual market actively
 - **Premium animations** — Add after conversion funnel optimized; vanity metric otherwise
 - **AI personalization** — Requires significant traffic for testing; premature at small scale
 - **Advanced analytics** — Start with Google Analytics; advanced tracking when optimizing at scale
 
 **Anti-features to avoid:**
+
 - Complex multi-step forms (20% abandonment increase per field)
 - Auto-playing background videos (kills mobile performance)
 - Multiple competing CTAs (causes analysis paralysis)
@@ -89,12 +95,14 @@ The architecture follows Next.js 15 best practices: server-first rendering with 
 5. **External Integrations** — Calendly for booking calendar, Resend for email notifications, Vercel Analytics + GA4 for tracking, next-intl for translations
 
 **Critical patterns:**
+
 - **Server Actions over API routes:** Forms use Server Actions for simplicity and progressive enhancement
 - **Static generation with ISR:** Use generateStaticParams for locale pages, revalidate for dynamic content
 - **Animation with scroll triggers:** Framer Motion in Client Components with whileInView for scroll-based reveals
 - **i18n with next-intl:** Middleware detects locale, NextIntlClientProvider in layout, translations in JSON files
 
 **Project structure:**
+
 - `app/[locale]/` for routing
 - `components/sections/` for Server Components (Hero, Features, etc.)
 - `components/forms/` for Client Components (BookingForm, ContactForm)
@@ -123,7 +131,7 @@ Next.js 15 landing pages have well-documented failure modes. The top pitfalls si
 
 8. **Third-party scripts block rendering** — Google Analytics, Calendly widgets delay page load by 2-3 seconds. **Prevention:** Use @next/third-parties/google for GA; use next/script with strategy="lazyOnload" for widgets; load analytics after hydration. **Phase 3 concern.**
 
-9. **Environment variables exposed to client** — API keys leak to browser if using NEXT_PUBLIC_ incorrectly. **Prevention:** Never use NEXT_PUBLIC_ for secrets; keep API keys in Server Components or Server Actions; upgrade to Next.js 15.0.7+ for security fix. **Phase 1 concern.**
+9. **Environment variables exposed to client** — API keys leak to browser if using NEXT*PUBLIC* incorrectly. **Prevention:** Never use NEXT*PUBLIC* for secrets; keep API keys in Server Components or Server Actions; upgrade to Next.js 15.0.7+ for security fix. **Phase 1 concern.**
 
 10. **Caching confusion** — Next.js 15 changed defaults; fetch is NOT cached by default (opposite of v14). **Prevention:** Use `revalidate` for time-based updates; use revalidatePath to invalidate after updates; understand revalidatePath regenerates on next request, not immediately. **Phase 2 concern.**
 
@@ -132,9 +140,11 @@ Next.js 15 landing pages have well-documented failure modes. The top pitfalls si
 Based on combined research, the roadmap should follow dependency-driven phasing that addresses critical pitfalls early and builds complexity incrementally.
 
 ### Phase 1: Foundation & Configuration (Week 1)
+
 **Rationale:** Must establish infrastructure before building features. Next.js 15 pitfalls are easiest to fix at setup time; retrofitting is expensive. Many critical issues (metadata, fonts, image config, env vars) are Phase 1 concerns per PITFALLS.md.
 
 **Delivers:**
+
 - Next.js 15 project with App Router configured
 - i18n routing with next-intl middleware
 - Root layout with providers and metadata
@@ -145,6 +155,7 @@ Based on combined research, the roadmap should follow dependency-driven phasing 
 - Environment variables properly scoped
 
 **Addresses pitfalls:**
+
 - Pitfall 1: Metadata in Server Components (establish architecture)
 - Pitfall 2: metadataBase configuration
 - Pitfall 3: Image optimization config
@@ -156,9 +167,11 @@ Based on combined research, the roadmap should follow dependency-driven phasing 
 **Research flag:** Skip research — Next.js 15 setup is well-documented in official docs
 
 ### Phase 2: Static Content & SEO (Week 2)
+
 **Rationale:** Build static sections as Server Components before adding interactivity. This follows architecture pattern of "server-first with client islands." Delivers visible landing page quickly while keeping bundle small.
 
 **Delivers:**
+
 - Hero section (Server Component)
 - Features/services section (Server Component)
 - About/practitioner section (Server Component)
@@ -168,16 +181,19 @@ Based on combined research, the roadmap should follow dependency-driven phasing 
 - Open Graph images and Twitter Cards
 
 **Uses from STACK.md:**
+
 - React 19 Server Components
 - Next.js Metadata API (not next-seo)
 - Tailwind CSS for styling
 
 **Implements from ARCHITECTURE.md:**
+
 - Server Components Layer
 - Static generation with generateStaticParams
 - SEO metadata structure
 
 **Addresses from FEATURES.md:**
+
 - Hero section with clear CTA (table stakes)
 - Professional practitioner photo (table stakes)
 - Service description (table stakes)
@@ -185,6 +201,7 @@ Based on combined research, the roadmap should follow dependency-driven phasing 
 - Contact information (table stakes)
 
 **Addresses pitfalls:**
+
 - Pitfall 4: Image dimensions for CLS (hero images)
 - Pitfall 7: Avoid overusing "use client" (static sections server-rendered)
 - Pitfall 10: Understand caching for static generation
@@ -192,9 +209,11 @@ Based on combined research, the roadmap should follow dependency-driven phasing 
 **Research flag:** Skip research — Landing page sections are standard patterns
 
 ### Phase 3: Forms & Validation (Week 3)
+
 **Rationale:** Forms depend on sections being in place for context. Server Actions provide simpler alternative to API routes. React Hook Form + Zod is industry standard per STACK.md.
 
 **Delivers:**
+
 - Contact form (Client Component)
 - Booking form (Client Component)
 - Server Actions for form handling
@@ -203,31 +222,37 @@ Based on combined research, the roadmap should follow dependency-driven phasing 
 - Form error display and loading states
 
 **Uses from STACK.md:**
+
 - React Hook Form 7.66+ for form state
 - Zod 3.x for schema validation
 - Resend + React Email for notifications
 - React 19's useActionState hook
 
 **Implements from ARCHITECTURE.md:**
+
 - Server Actions pattern (not API routes)
 - Client Islands pattern (forms isolated)
 - Data flow: Client → Server Action → Validation → Email API
 
 **Addresses from FEATURES.md:**
+
 - Contact form (table stakes)
 - Pricing display (table stakes)
 - FAQ section (table stakes)
 
 **Addresses pitfalls:**
+
 - Pitfall 6: Server Action validation errors displayed properly with useActionState
 - Pitfall 9: API keys kept server-side in Server Actions
 
 **Research flag:** Skip research — Server Actions + React Hook Form well documented
 
 ### Phase 4: Animations & Polish (Week 4)
+
 **Rationale:** Add animations after static content works. Easy to wrap existing sections with animation components. Animations are differentiator per FEATURES.md but not critical for functionality.
 
 **Delivers:**
+
 - Scroll animation wrappers (FadeInView, SlideInView)
 - Animated hero elements
 - Smooth scrolling with Lenis
@@ -235,29 +260,35 @@ Based on combined research, the roadmap should follow dependency-driven phasing 
 - Performance budget monitoring
 
 **Uses from STACK.md:**
+
 - Framer Motion 12.x for declarative animations
 - Lenis 1.x for smooth scrolling
 - Tailwind Motion as lightweight alternative if needed
 
 **Implements from ARCHITECTURE.md:**
+
 - Animation with scroll triggers pattern
 - Client Components wrapping Server Components
 - whileInView for scroll-based reveals
 
 **Addresses from FEATURES.md:**
+
 - Premium animations (differentiator)
 - Professional polish for longer sessions
 
 **Addresses pitfalls:**
+
 - Pitfall 4: Animations don't add layout shift (viewport={{ once: true }})
 - Ensure animations remain fast (0.3-0.6s duration)
 
 **Research flag:** Light research may help — Framer Motion scroll patterns and performance optimization
 
 ### Phase 5: Booking Integration & Analytics (Week 5)
+
 **Rationale:** External integrations depend on forms and content being functional. Booking is high-value feature (20-40% conversion increase) per FEATURES.md. Analytics needs content to track.
 
 **Delivers:**
+
 - Calendly embedded booking widget
 - Google Analytics 4 setup
 - Vercel Analytics integration
@@ -265,28 +296,34 @@ Based on combined research, the roadmap should follow dependency-driven phasing 
 - Performance monitoring
 
 **Uses from STACK.md:**
+
 - react-calendly for booking embed
 - @next/third-parties/google for GA4
 - Vercel Analytics SDK
 
 **Implements from ARCHITECTURE.md:**
+
 - External integrations layer
 - Script loading with next/script
 
 **Addresses from FEATURES.md:**
+
 - Integrated appointment booking (differentiator)
 - Analytics tracking (should have)
 
 **Addresses pitfalls:**
+
 - Pitfall 8: Third-party scripts use next/script with lazyOnload
 - Ensure booking widget doesn't block page load
 
 **Research flag:** May need research — Calendly integration patterns, GA4 event tracking setup
 
 ### Phase 6: Multi-Language & Optimization (Week 6)
+
 **Rationale:** i18n is complex and should come after core functionality proven. Optimization requires complete functionality to measure improvements.
 
 **Delivers:**
+
 - Multi-language support (if needed)
 - Translation files for all content
 - Language switcher component
@@ -298,21 +335,25 @@ Based on combined research, the roadmap should follow dependency-driven phasing 
 - ISR configuration for dynamic content
 
 **Uses from STACK.md:**
+
 - next-intl 3.x with App Router
 - Next.js Image component optimizations
 - Built-in performance monitoring
 
 **Implements from ARCHITECTURE.md:**
+
 - i18n with next-intl pattern
 - Static generation strategy
 - Performance optimization
 
 **Addresses from FEATURES.md:**
+
 - Multi-language support (v2+ feature, conditional)
 - Mobile responsiveness (table stakes)
 - Fast page load (table stakes)
 
 **Addresses pitfalls:**
+
 - Final checks for all Phase 1-5 pitfalls
 - CLS score < 0.1
 - LCP < 2.5s
@@ -335,6 +376,7 @@ Based on combined research, the roadmap should follow dependency-driven phasing 
 5. **Optimization last (Phase 6):** Can't optimize until everything exists. Requires measuring complete functionality. i18n is highest complexity, defer until core proven.
 
 **Dependency chain:**
+
 - Phase 1 → Phase 2 (infrastructure enables sections)
 - Phase 2 → Phase 3 (sections provide context for forms)
 - Phase 2 → Phase 4 (static sections get wrapped with animations)
@@ -342,6 +384,7 @@ Based on combined research, the roadmap should follow dependency-driven phasing 
 - Phase 1-5 → Phase 6 (everything must exist for optimization)
 
 **How this avoids pitfalls:**
+
 - Phase 1 addresses 5 critical pitfalls upfront (metadata, fonts, images, env vars)
 - Phase 2 prevents bundle bloat by establishing server-first pattern
 - Phase 3 implements proper Server Action validation before external dependencies
@@ -369,12 +412,12 @@ Based on combined research, the roadmap should follow dependency-driven phasing 
 
 ## Confidence Assessment
 
-| Area | Confidence | Notes |
-|------|------------|-------|
-| Stack | HIGH | All technologies verified via Context7 official documentation (Next.js, React, Tailwind, Framer Motion, React Hook Form, next-intl). Stack choices align with 2026 best practices. Version compatibility confirmed. |
-| Features | HIGH | Based on 40+ landing page examples, wellness industry patterns, booking system analysis, and conversion optimization research from 2026. Feature prioritization backed by conversion data (53% abandon if >3s, 93% research pricing, etc.). |
-| Architecture | HIGH | Verified via official Next.js 15 documentation and multiple senior-level architecture guides. Server-first with client islands is established pattern. Project structure validated across multiple sources. |
-| Pitfalls | HIGH | Drawn from official Next.js blog, GitHub issues, Medium technical articles, and performance guides. All 10 pitfalls cross-referenced with multiple sources. Phase mapping verified against build order recommendations. |
+| Area         | Confidence | Notes                                                                                                                                                                                                                                       |
+| ------------ | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Stack        | HIGH       | All technologies verified via Context7 official documentation (Next.js, React, Tailwind, Framer Motion, React Hook Form, next-intl). Stack choices align with 2026 best practices. Version compatibility confirmed.                         |
+| Features     | HIGH       | Based on 40+ landing page examples, wellness industry patterns, booking system analysis, and conversion optimization research from 2026. Feature prioritization backed by conversion data (53% abandon if >3s, 93% research pricing, etc.). |
+| Architecture | HIGH       | Verified via official Next.js 15 documentation and multiple senior-level architecture guides. Server-first with client islands is established pattern. Project structure validated across multiple sources.                                 |
+| Pitfalls     | HIGH       | Drawn from official Next.js blog, GitHub issues, Medium technical articles, and performance guides. All 10 pitfalls cross-referenced with multiple sources. Phase mapping verified against build order recommendations.                     |
 
 **Overall confidence:** HIGH
 
@@ -399,6 +442,7 @@ Despite high confidence, a few areas need attention during implementation:
 ### Primary Sources (HIGH confidence)
 
 **Context7 Official Documentation:**
+
 - `/vercel/next.js/v16.1.5` — Next.js App Router, Metadata API, Server Components, Image optimization
 - `/websites/react_dev` — React 19 hooks, Server Components, useActionState
 - `/amannn/next-intl` — App Router i18n setup, locale routing
@@ -407,6 +451,7 @@ Despite high confidence, a few areas need attention during implementation:
 - `/websites/tailwindcss` — Utility-first CSS framework, v4 features
 
 **Official Guides & Security Updates:**
+
 - [Next.js App Router Documentation](https://nextjs.org/docs/app)
 - [Next.js Security Update Dec 2025](https://nextjs.org/blog/security-update-2025-12-11) — Environment variable security
 - [Next.js Project Structure Guide](https://nextjs.org/docs/app/getting-started/project-structure)
@@ -416,35 +461,41 @@ Despite high confidence, a few areas need attention during implementation:
 ### Secondary Sources (MEDIUM-HIGH confidence)
 
 **Landing Page Best Practices & Features:**
+
 - [40 Best Landing Page Examples 2026 (Unbounce)](https://unbounce.com/landing-page-examples/best-landing-page-examples/)
 - [Top 16 Wellness Website Examples 2026 (Hostinger)](https://www.hostinger.com/tutorials/wellness-website-examples)
 - [12 Landing Page Best Practices 2026 (Leadfeeder)](https://www.leadfeeder.com/blog/landing-pages-convert/)
 - [Landing Page Optimization Ultimate Guide (VWO)](https://vwo.com/landing-page-optimization/)
 
 **Next.js Architecture & Patterns:**
+
 - [Modern Full Stack Application Architecture Using Next.js 15+ (SoftwareMill)](https://softwaremill.com/modern-full-stack-application-architecture-using-next-js-15/)
 - [Ultimate Guide to Organizing Next.js 15 Project Structure (Wisp)](https://www.wisp.blog/blog/the-ultimate-guide-to-organizing-your-nextjs-15-project-structure)
 - [Next.js Architecture 2026 — Server-First, Client-Islands (YogiJS)](https://www.yogijs.tech/blog/nextjs-project-architecture-app-router)
 - [Next.js 15 App Router Complete Senior-Level Guide (Medium)](https://medium.com/@livenapps/next-js-15-app-router-a-complete-senior-level-guide-0554a2b820f7)
 
 **Performance & Pitfalls:**
+
 - [7 Common Performance Mistakes - Daniel Scott](https://medium.com/full-stack-forge/7-common-performance-mistakes-in-next-js-and-how-to-fix-them-edd355e2f9a9)
 - [10 Next.js Mistakes Slowing Your App - debug_senpai](https://medium.com/@jigsz6391/10-nextjs-mistakes-slowing-your-app-and-how-to-fix-them-fast-e792a4ff5caf)
 - [Fixing CLS in Next.js - Ankit](https://medium.com/@mohantaankit2002/fixing-cls-cumulative-layout-shift-issues-in-next-js-for-better-core-web-vitals-65e8fbecdd0e)
 - [Optimizing Core Web Vitals Next.js 15 - Excel Nwachukwu](https://trillionclues.medium.com/optimizing-core-web-vitals-with-next-js-15-61564cc51b13)
 
 **Integration Patterns:**
+
 - [Next.js 15 Server Actions Complete Guide - Saad Minhas](https://medium.com/@saad.minhas.codes/next-js-15-server-actions-complete-guide-with-real-examples-2026-6320fbfa01c3)
 - [Mastering Form Handling in Next.js 15 with Server Actions](https://medium.com/@sankalpa115/mastering-form-handling-in-next-js-15-with-server-actions-react-hook-form-react-query-and-shadcn-108f6863200f)
 - [Google Analytics Setup Next.js 15 - Thomas Augot](https://medium.com/@thomasaugot/how-to-set-up-google-analytics-with-google-tag-manager-in-next-js-15-in-2025-dedfcaee875a)
 
 **Stack-Specific Research:**
+
 - [Framer Motion vs GSAP Performance (Motion.dev)](https://motion.dev/docs/gsap-vs-motion)
 - [Resend vs SendGrid Comparison (Sequenzy)](https://www.sequenzy.com/versus/resend-vs-sendgrid)
 - [Tailwind CSS 4 Setup (Next.js Discussions)](https://github.com/vercel/next.js/discussions/82623)
 - [shadcn/ui 2026 Updates](https://ui.shadcn.com/docs/changelog/2026-02-radix-ui)
 
 **Pitfall-Specific Research:**
+
 - [Next.js SEO Complete Guide 2026 - Thomas Augot](https://medium.com/@thomasaugot/the-complete-guide-to-seo-optimization-in-next-js-15-1bdb118cffd7)
 - [OG Check Next.js Guide](https://ogcheck.com/blog/nextjs-open-graph)
 - [Next.js Image Optimization Pain - Daggie Blanqx](https://medium.com/@daggieblanqx/the-untold-pain-of-next-js-image-optimization-and-how-to-finally-fix-it-19c792ea4ad9)
@@ -452,10 +503,12 @@ Despite high confidence, a few areas need attention during implementation:
 - [Managing Environment Variables - Bale](https://medium.com/@bloodturtle/managing-environment-variables-in-next-js-protecting-sensitive-information-95ba60910d56)
 
 ### GitHub Issues & Official Discussions (HIGH confidence for problem validation)
+
 - [Metadata metadataBase Issue #62984](https://github.com/vercel/next.js/issues/62984)
 - [Caching Discussion #54075](https://github.com/vercel/next.js/discussions/54075)
 - [Cal.com Next.js 15 Compatibility Issues](https://github.com/vercel/next.js/discussions/71995)
 
 ---
-*Research completed: 2026-02-10*
-*Ready for roadmap: yes*
+
+_Research completed: 2026-02-10_
+_Ready for roadmap: yes_

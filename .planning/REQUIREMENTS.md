@@ -146,101 +146,103 @@ Deferred to future release. Tracked but not in current roadmap.
 
 Explicitly excluded. Documented to prevent scope creep.
 
-| Feature | Reason |
-|---------|--------|
-| Личный кабинет пользователей | Не нужен для простой записи на сеанс; усложняет MVP |
-| CMS для управления контентом | Контент определен заранее; статичный сайт проще поддерживать |
-| Чат-поддержка в реальном времени | Не критично для wellness landing page; контактная форма достаточна |
-| Mobile приложение | Web-first подход; responsive сайт покрывает мобильные нужды |
-| Система лояльности / membership | Можно добавить после валидации спроса; не для MVP |
-| Интеграция с соц. сетями (посты) | Достаточно Open Graph для sharing; полная интеграция избыточна |
-| Сложная система отчетов для практикующего | Email-уведомления достаточны для начала |
-| Marketplace других практиков | Фокус на одном практикующем; расширение позже |
+| Feature                                   | Reason                                                             |
+| ----------------------------------------- | ------------------------------------------------------------------ |
+| Личный кабинет пользователей              | Не нужен для простой записи на сеанс; усложняет MVP                |
+| CMS для управления контентом              | Контент определен заранее; статичный сайт проще поддерживать       |
+| Чат-поддержка в реальном времени          | Не критично для wellness landing page; контактная форма достаточна |
+| Mobile приложение                         | Web-first подход; responsive сайт покрывает мобильные нужды        |
+| Система лояльности / membership           | Можно добавить после валидации спроса; не для MVP                  |
+| Интеграция с соц. сетями (посты)          | Достаточно Open Graph для sharing; полная интеграция избыточна     |
+| Сложная система отчетов для практикующего | Email-уведомления достаточны для начала                            |
+| Marketplace других практиков              | Фокус на одном практикующем; расширение позже                      |
 
 ## Traceability
 
 Which phases cover which requirements. Updated during roadmap creation.
 
-| Requirement | Phase | Status |
-|-------------|-------|--------|
-| HERO-01 | Phase 2 | Pending |
-| HERO-02 | Phase 2 | Pending |
-| HERO-03 | Phase 2 | Pending |
-| HERO-04 | Phase 2 | Pending |
-| CONT-01 | Phase 2 | Pending |
-| CONT-02 | Phase 2 | Pending |
-| CONT-03 | Phase 2 | Pending |
-| CONT-04 | Phase 2 | Pending |
-| CONT-05 | Phase 2 | Pending |
-| CONT-06 | Phase 2 | Pending |
-| TRUST-01 | Phase 2 | Pending |
-| TRUST-02 | Phase 2 | Pending |
-| TRUST-03 | Phase 2 | Pending |
-| TRUST-04 | Phase 2 | Pending |
-| TRUST-05 | Phase 2 | Pending |
-| TRUST-06 | Phase 2 | Pending |
-| PRICE-01 | Phase 2 | Pending |
-| PRICE-02 | Phase 2 | Pending |
-| PRICE-03 | Phase 2 | Pending |
-| PRICE-04 | Phase 2 | Pending |
-| BOOK-01 | Phase 3 | Pending |
-| BOOK-02 | Phase 5 | Pending |
-| BOOK-03 | Phase 5 | Pending |
-| BOOK-04 | Phase 3 | Pending |
-| BOOK-05 | Phase 3 | Pending |
-| BOOK-06 | Phase 3 | Pending |
-| BOOK-07 | Phase 3 | Pending |
-| FAQ-01 | Phase 3 | Pending |
-| FAQ-02 | Phase 3 | Pending |
-| FAQ-03 | Phase 3 | Pending |
-| FAQ-04 | Phase 3 | Pending |
-| FAQ-05 | Phase 3 | Pending |
-| UX-01 | Phase 4 | Pending |
-| UX-02 | Phase 2 | Pending |
-| UX-03 | Phase 2 | Pending |
-| UX-04 | Phase 2 | Pending |
-| UX-05 | Phase 4 | Pending |
-| UX-06 | Phase 4 | Pending |
-| UX-07 | Phase 4 | Pending |
-| UX-08 | Phase 4 | Pending |
-| PERF-01 | Phase 4 | Pending |
-| PERF-02 | Phase 4 | Pending |
-| PERF-03 | Phase 4 | Pending |
-| PERF-04 | Phase 4 | Pending |
-| PERF-05 | Phase 4 | Pending |
-| PERF-06 | Phase 4 | Pending |
-| SEO-01 | Phase 2 | Pending |
-| SEO-02 | Phase 2 | Pending |
-| SEO-03 | Phase 2 | Pending |
-| SEO-04 | Phase 2 | Pending |
-| SEO-05 | Phase 2 | Pending |
-| SEO-06 | Phase 2 | Pending |
-| SEO-07 | Phase 2 | Pending |
-| I18N-01 | Phase 6 | Pending |
-| I18N-02 | Phase 6 | Pending |
-| I18N-03 | Phase 6 | Pending |
-| I18N-04 | Phase 6 | Pending |
-| I18N-05 | Phase 6 | Pending |
-| I18N-06 | Phase 6 | Pending |
-| TRACK-01 | Phase 5 | Pending |
-| TRACK-02 | Phase 5 | Pending |
-| TRACK-03 | Phase 5 | Pending |
-| TRACK-04 | Phase 5 | Pending |
-| TRACK-05 | Phase 5 | Pending |
-| TECH-01 | Phase 1 | Pending |
-| TECH-02 | Phase 1 | Pending |
-| TECH-03 | Phase 1 | Pending |
-| TECH-04 | Phase 1 | Pending |
-| TECH-05 | Phase 1 | Pending |
-| TECH-06 | Phase 1 | Pending |
-| TECH-07 | Phase 1 | Pending |
-| TECH-08 | Phase 1 | Pending |
+| Requirement | Phase   | Status  |
+| ----------- | ------- | ------- |
+| HERO-01     | Phase 2 | Pending |
+| HERO-02     | Phase 2 | Pending |
+| HERO-03     | Phase 2 | Pending |
+| HERO-04     | Phase 2 | Pending |
+| CONT-01     | Phase 2 | Pending |
+| CONT-02     | Phase 2 | Pending |
+| CONT-03     | Phase 2 | Pending |
+| CONT-04     | Phase 2 | Pending |
+| CONT-05     | Phase 2 | Pending |
+| CONT-06     | Phase 2 | Pending |
+| TRUST-01    | Phase 2 | Pending |
+| TRUST-02    | Phase 2 | Pending |
+| TRUST-03    | Phase 2 | Pending |
+| TRUST-04    | Phase 2 | Pending |
+| TRUST-05    | Phase 2 | Pending |
+| TRUST-06    | Phase 2 | Pending |
+| PRICE-01    | Phase 2 | Pending |
+| PRICE-02    | Phase 2 | Pending |
+| PRICE-03    | Phase 2 | Pending |
+| PRICE-04    | Phase 2 | Pending |
+| BOOK-01     | Phase 3 | Pending |
+| BOOK-02     | Phase 5 | Pending |
+| BOOK-03     | Phase 5 | Pending |
+| BOOK-04     | Phase 3 | Pending |
+| BOOK-05     | Phase 3 | Pending |
+| BOOK-06     | Phase 3 | Pending |
+| BOOK-07     | Phase 3 | Pending |
+| FAQ-01      | Phase 3 | Pending |
+| FAQ-02      | Phase 3 | Pending |
+| FAQ-03      | Phase 3 | Pending |
+| FAQ-04      | Phase 3 | Pending |
+| FAQ-05      | Phase 3 | Pending |
+| UX-01       | Phase 4 | Pending |
+| UX-02       | Phase 2 | Pending |
+| UX-03       | Phase 2 | Pending |
+| UX-04       | Phase 2 | Pending |
+| UX-05       | Phase 4 | Pending |
+| UX-06       | Phase 4 | Pending |
+| UX-07       | Phase 4 | Pending |
+| UX-08       | Phase 4 | Pending |
+| PERF-01     | Phase 4 | Pending |
+| PERF-02     | Phase 4 | Pending |
+| PERF-03     | Phase 4 | Pending |
+| PERF-04     | Phase 4 | Pending |
+| PERF-05     | Phase 4 | Pending |
+| PERF-06     | Phase 4 | Pending |
+| SEO-01      | Phase 2 | Pending |
+| SEO-02      | Phase 2 | Pending |
+| SEO-03      | Phase 2 | Pending |
+| SEO-04      | Phase 2 | Pending |
+| SEO-05      | Phase 2 | Pending |
+| SEO-06      | Phase 2 | Pending |
+| SEO-07      | Phase 2 | Pending |
+| I18N-01     | Phase 6 | Pending |
+| I18N-02     | Phase 6 | Pending |
+| I18N-03     | Phase 6 | Pending |
+| I18N-04     | Phase 6 | Pending |
+| I18N-05     | Phase 6 | Pending |
+| I18N-06     | Phase 6 | Pending |
+| TRACK-01    | Phase 5 | Pending |
+| TRACK-02    | Phase 5 | Pending |
+| TRACK-03    | Phase 5 | Pending |
+| TRACK-04    | Phase 5 | Pending |
+| TRACK-05    | Phase 5 | Pending |
+| TECH-01     | Phase 1 | Pending |
+| TECH-02     | Phase 1 | Pending |
+| TECH-03     | Phase 1 | Pending |
+| TECH-04     | Phase 1 | Pending |
+| TECH-05     | Phase 1 | Pending |
+| TECH-06     | Phase 1 | Pending |
+| TECH-07     | Phase 1 | Pending |
+| TECH-08     | Phase 1 | Pending |
 
 **Coverage:**
+
 - v1 requirements: 58 total
 - Mapped to phases: 58/58 ✓
 - Unmapped: 0 ✓
 
 ---
-*Requirements defined: 2026-02-10*
-*Last updated: 2026-02-10 after roadmap creation*
+
+_Requirements defined: 2026-02-10_
+_Last updated: 2026-02-10 after roadmap creation_
