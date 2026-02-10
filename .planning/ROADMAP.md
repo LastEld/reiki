@@ -35,10 +35,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   4. Environment variables are properly scoped (server-only secrets not exposed)
   5. Deployment pipeline auto-deploys from Git repository to production URL
 
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 01-01: [TBD during planning]
+- [ ] 01-01-PLAN.md -- Scaffold Next.js 15 project with TypeScript, Tailwind CSS, ESLint, Prettier, and critical configuration
+- [ ] 01-02-PLAN.md -- Deploy to Vercel with Git auto-deploy and verify production URL
 
 ---
 
