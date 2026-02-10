@@ -18,7 +18,13 @@ affects: [02-homepage-hero, 03-services-section, 04-booking-integration, all-sub
 # Tech tracking
 tech-stack:
   added: [next@16.1.6, react@19.2.3, tailwindcss@4, prettier@3.8.1, eslint-config-prettier@10.1.8]
-  patterns: [App Router file structure, Tailwind v4 @import directive, Prettier formatting, environment variable scoping]
+  patterns:
+    [
+      App Router file structure,
+      Tailwind v4 @import directive,
+      Prettier formatting,
+      environment variable scoping,
+    ]
 
 key-files:
   created:
@@ -92,7 +98,7 @@ Each task was committed atomically:
 - `.env.local` - Development environment variables (gitignored)
 - `.env.production` - Production environment defaults (gitignored)
 - `.env.example` - Environment variable template (committed to git)
-- `.gitignore` - Excludes .env* (except .env.example), .next/, node_modules/
+- `.gitignore` - Excludes .env\* (except .env.example), .next/, node_modules/
 - `.prettierrc` - Prettier formatting rules (semi: false, singleQuote: true)
 - `eslint.config.mjs` - ESLint with Next.js core-web-vitals, TypeScript, and Prettier integration
 
