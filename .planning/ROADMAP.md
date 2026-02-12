@@ -63,11 +63,14 @@ Plans:
 4. Social media preview shows correct title, description, and image when sharing site URL
 5. Search engines correctly index the page with proper semantic HTML structure and structured data
 
-**Plans**: TBD
+**Plans**: 4 plans
 
 Plans:
 
-- [ ] 02-01: [TBD during planning]
+- [ ] 02-01-PLAN.md -- Design system, layout shell (header + footer), SEO metadata, CTA button
+- [ ] 02-02-PLAN.md -- Hero section, About Reiki, and How Sessions Work sections
+- [ ] 02-03-PLAN.md -- Benefits, Pricing cards, and Trust/credentials sections
+- [ ] 02-04-PLAN.md -- SEO assets (JSON-LD, sitemap, robots, OG image) and visual verification
 
 ---
 
@@ -170,12 +173,12 @@ Plans:
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
+Phases execute in numeric order: 1 -> 2 -> 3 -> 4 -> 5 -> 6
 
 | Phase                                  | Plans Complete | Status      | Completed |
 | -------------------------------------- | -------------- | ----------- | --------- |
-| 1. Foundation & Configuration          | 0/TBD          | Not started | -         |
-| 2. Static Content & SEO                | 0/TBD          | Not started | -         |
+| 1. Foundation & Configuration          | 2/2            | Complete    | 2026-02-10 |
+| 2. Static Content & SEO                | 0/4            | Planning    | -         |
 | 3. Forms & Validation                  | 0/TBD          | Not started | -         |
 | 4. Animations & Polish                 | 0/TBD          | Not started | -         |
 | 5. Booking Integration & Analytics     | 0/TBD          | Not started | -         |
@@ -184,4 +187,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 ---
 
 _Roadmap created: 2026-02-10_
-_Last updated: 2026-02-10_
+_Last updated: 2026-02-12_
