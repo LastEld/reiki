@@ -13,13 +13,13 @@ export default function Home() {
     description:
       'Professional Reiki healing and energy work sessions for stress relief, emotional balance, and holistic wellness',
     image: '/opengraph-image',
-    telephone: '+7-XXX-XXX-XX-XX',
-    email: 'info@reiki-practice.com',
+    telephone: '+41-XX-XXX-XX-XX',
+    email: 'info@reiki-practice.ch',
     priceRange: '$$',
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Moscow',
-      addressCountry: 'RU',
+      addressLocality: 'Zürich',
+      addressCountry: 'CH',
     },
     openingHours: 'Mo-Sa 10:00-20:00',
     sameAs: [],

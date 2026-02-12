@@ -11,7 +11,9 @@ export default function Footer() {
             <p className="text-neutral-400 mb-4">
               Professional energy healing sessions to restore balance and promote wellness.
             </p>
-            <p className="text-neutral-500 text-sm">&copy; {currentYear} All rights reserved.</p>
+            <p className="text-neutral-500 text-sm" suppressHydrationWarning>
+              &copy; {currentYear} All rights reserved.
+            </p>
           </div>
 
           {/* Column 2: Quick links */}
@@ -43,11 +45,11 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-3">Contact</h4>
             <div className="flex flex-col gap-2 text-neutral-400">
-              <a href="tel:+7XXXXXXXXXX" className="hover:text-white transition-colors">
-                +7 (XXX) XXX-XX-XX
+              <a href="tel:+41XXXXXXXXX" className="hover:text-white transition-colors">
+                +41 XX XXX XX XX
               </a>
-              <a href="mailto:info@reiki-practice.com" className="hover:text-white transition-colors">
-                info@reiki-practice.com
+              <a href="mailto:info@reiki-practice.ch" className="hover:text-white transition-colors">
+                info@reiki-practice.ch
               </a>
             </div>
           </div>

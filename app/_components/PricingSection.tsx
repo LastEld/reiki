@@ -4,7 +4,7 @@ export default function PricingSection() {
   const pricingTiers = [
     {
       name: 'Single Session',
-      price: '3,500 RUB',
+      price: 'CHF 120',
       duration: '60 minutes',
       featured: false,
       features: [
@@ -15,7 +15,7 @@ export default function PricingSection() {
     },
     {
       name: 'Course of 3 Sessions',
-      price: '9,000 RUB',
+      price: 'CHF 306',
       badge: 'Best Value',
       savings: 'Save 15%',
       duration: '60 minutes each',
@@ -29,7 +29,7 @@ export default function PricingSection() {
     },
     {
       name: 'Intensive Program',
-      price: '15,000 RUB',
+      price: 'CHF 510',
       duration: '5 sessions + follow-up',
       featured: false,
       features: [
