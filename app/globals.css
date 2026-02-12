@@ -1,26 +1,79 @@
 @import 'tailwindcss';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Primary palette: Calming blue-teal for trust and healing */
+  --color-primary-50: oklch(0.98 0.01 220);
+  --color-primary-100: oklch(0.95 0.02 220);
+  --color-primary-200: oklch(0.88 0.04 220);
+  --color-primary-300: oklch(0.78 0.08 220);
+  --color-primary-400: oklch(0.65 0.12 220);
+  --color-primary-500: oklch(0.55 0.14 220);
+  --color-primary-600: oklch(0.48 0.13 220);
+  --color-primary-700: oklch(0.40 0.11 220);
+  --color-primary-800: oklch(0.32 0.09 220);
+  --color-primary-900: oklch(0.25 0.07 220);
+
+  /* Accent palette: Warm gold/amber for CTAs and highlights */
+  --color-accent-400: oklch(0.75 0.12 80);
+  --color-accent-500: oklch(0.68 0.15 75);
+  --color-accent-600: oklch(0.60 0.14 70);
+
+  /* Neutral palette: Warm grays for softer wellness feel */
+  --color-neutral-50: oklch(0.98 0.005 60);
+  --color-neutral-100: oklch(0.96 0.005 60);
+  --color-neutral-200: oklch(0.90 0.008 60);
+  --color-neutral-300: oklch(0.80 0.010 60);
+  --color-neutral-400: oklch(0.65 0.012 60);
+  --color-neutral-500: oklch(0.52 0.012 60);
+  --color-neutral-600: oklch(0.42 0.010 60);
+  --color-neutral-700: oklch(0.35 0.008 60);
+  --color-neutral-800: oklch(0.25 0.006 60);
+  --color-neutral-900: oklch(0.18 0.005 60);
+
+  /* Surface colors for backgrounds */
+  --color-surface-white: oklch(1 0 0);
+  --color-surface-cream: oklch(0.98 0.01 80);
+  --color-surface-dark: oklch(0.18 0.005 60);
+
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: var(--font-geist-sans);
+
+  /* Spacing tokens */
+  --spacing-section: 5rem;
+  --spacing-section-lg: 7rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Section container utility */
+@layer utilities {
+  .section-container {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @media (min-width: 640px) {
+    .section-container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .section-container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
 }
