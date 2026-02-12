@@ -10,31 +10,32 @@ See: .planning/PROJECT.md (updated 2026-02-10)
 
 ## Current Position
 
-Phase: 1 of 6 (Foundation & Configuration)
-Plan: 1 of 2 (in progress)
+Phase: 2 of 6 (Static Content & SEO)
+Plan: 1 of 3 (complete)
 Status: In progress
-Last activity: 2026-02-10 — Completed 01-01-PLAN.md
+Last activity: 2026-02-12 — Completed 02-01-PLAN.md
 
-Progress: [█░░░░░░░░░] 10%
+Progress: [██░░░░░░░░] 20%
 
 ## Performance Metrics
 
 **Velocity:**
 
-- Total plans completed: 1
-- Average duration: 13 min
-- Total execution time: 0.2 hours
+- Total plans completed: 3
+- Average duration: 8.3 min
+- Total execution time: 0.4 hours
 
 **By Phase:**
 
 | Phase | Plans | Total  | Avg/Plan |
 | ----- | ----- | ------ | -------- |
-| 01    | 1     | 13 min | 13 min   |
+| 01    | 2     | 15 min | 7.5 min  |
+| 02    | 1     | 4 min  | 4 min    |
 
 **Recent Trend:**
 
-- Last 5 plans: 01-01 (13 min)
-- Trend: N/A (insufficient data)
+- Last 5 plans: 01-01 (13 min), 01-02 (2 min), 02-01 (4 min)
+- Trend: Improving (plans getting faster)
 
 _Updated after each plan completion_
 
@@ -60,6 +61,18 @@ Recent decisions affecting current work:
 - Environment files: .env.local (dev), .env.production (prod), .env.example (template)
 - ESLint + Prettier integration via eslint-config-prettier (not plugin)
 
+**From 02-01:**
+
+- Design system uses oklch color space for perceptually-uniform colors
+- Primary palette: calming blue-teal (9 shades) for trust and healing
+- Accent palette: warm gold/amber (3 shades) for CTAs and highlights
+- Neutral palette: warm grays (9 shades) for softer wellness feel
+- Playfair Display serif for headings (premium, elegant)
+- Light theme only - no dark mode for landing page
+- Server Components by default, 'use client' only when needed
+- Section container utility class for consistent max-width and padding
+- CTAButton has 3 variants: hero, primary, header
+
 ### Pending Todos
 
 None yet.
@@ -70,11 +83,11 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-02-10 (plan execution)
-Stopped at: Completed 01-01-PLAN.md (Foundation & Configuration)
+Last session: 2026-02-12 (plan execution)
+Stopped at: Completed 02-01-PLAN.md (Static Content & SEO)
 Resume file: None
 
 ---
 
 _State initialized: 2026-02-10_
-_Last updated: 2026-02-10 19:09_
+_Last updated: 2026-02-12 16:04_
