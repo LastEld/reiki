@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
+import type { ReactNode } from 'react'
 import { Geist, Geist_Mono, Playfair_Display } from 'next/font/google'
 import './globals.css'
-import Header from './_components/Header'
-import Footer from './_components/Footer'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -16,7 +15,7 @@ const geistMono = Geist_Mono({
 
 const playfairDisplay = Playfair_Display({
   variable: '--font-playfair',
-  subsets: ['latin'],
+  subsets: ['latin', 'cyrillic'],
   weight: ['400', '700'],
 })
 
@@ -27,48 +26,27 @@ export const metadata: Metadata = {
       : 'http://localhost:3000',
   ),
   title: {
-    default: 'Reiki Healing | Find Balance and Inner Peace',
+    default: 'Reiki Healing Zürich | Reiki Behandlung Schweiz',
     template: '%s | Reiki Healing',
   },
   description:
-    'Experience professional Reiki healing sessions with a certified practitioner. Restore balance, reduce stress, and promote wellness through gentle energy healing. Book your consultation today.',
-  keywords: [
-    'reiki',
-    'healing',
-    'energy healing',
-    'wellness',
-    'meditation',
-    'stress relief',
-    'holistic health',
-  ],
-  openGraph: {
-    type: 'website',
-    title: 'Reiki Healing | Find Balance and Inner Peace',
-    description:
-      'Experience professional Reiki healing sessions with a certified practitioner. Restore balance, reduce stress, and promote wellness through gentle energy healing.',
-    images: ['/opengraph-image.jpg'],
-  },
+    'Professional Reiki healing sessions in Zürich, Switzerland. Certified practitioner for stress relief, energy healing, and holistic wellness.',
   twitter: {
     card: 'summary_large_image',
-    title: 'Reiki Healing | Find Balance and Inner Peace',
-    description:
-      'Experience professional Reiki healing sessions with a certified practitioner. Restore balance, reduce stress, and promote wellness.',
   },
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+type Props = {
+  children: ReactNode
+}
+
+export default function RootLayout({ children }: Props) {
   return (
-    <html lang="en">
+    <html suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} antialiased`}
       >
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        {children}
       </body>
     </html>
   )

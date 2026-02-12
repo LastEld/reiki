@@ -1,9 +1,12 @@
-import Hero from './_components/Hero'
-import AboutSection from './_components/AboutSection'
-import HowItWorksSection from './_components/HowItWorksSection'
-import BenefitsSection from './_components/BenefitsSection'
-import TrustSection from './_components/TrustSection'
-import PricingSection from './_components/PricingSection'
+import Hero from '../_components/Hero'
+import AboutSection from '../_components/AboutSection'
+import HowItWorksSection from '../_components/HowItWorksSection'
+import BenefitsSection from '../_components/BenefitsSection'
+import TrustSection from '../_components/TrustSection'
+import PricingSection from '../_components/PricingSection'
+import FAQSection from '../_components/FAQSection'
+import BookingSection from '../_components/BookingSection'
+import ContactSection from '../_components/ContactSection'
 
 export default function Home() {
   const jsonLd = {
@@ -39,7 +42,9 @@ export default function Home() {
       <BenefitsSection />
       <TrustSection />
       <PricingSection />
-      <div id="contact" />
+      <FAQSection />
+      <BookingSection />
+      <ContactSection />
     </>
   )
 }
