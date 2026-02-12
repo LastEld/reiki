@@ -11,31 +11,31 @@ See: .planning/PROJECT.md (updated 2026-02-10)
 ## Current Position
 
 Phase: 2 of 6 (Static Content & SEO)
-Plan: 1 of 3 (complete)
+Plan: 2 of 3 (complete)
 Status: In progress
-Last activity: 2026-02-12 — Completed 02-01-PLAN.md
+Last activity: 2026-02-12 — Completed 02-02-PLAN.md
 
-Progress: [██░░░░░░░░] 20%
+Progress: [███░░░░░░░] 27%
 
 ## Performance Metrics
 
 **Velocity:**
 
-- Total plans completed: 3
-- Average duration: 8.3 min
-- Total execution time: 0.4 hours
+- Total plans completed: 4
+- Average duration: 7.3 min
+- Total execution time: 0.5 hours
 
 **By Phase:**
 
 | Phase | Plans | Total  | Avg/Plan |
 | ----- | ----- | ------ | -------- |
 | 01    | 2     | 15 min | 7.5 min  |
-| 02    | 1     | 4 min  | 4 min    |
+| 02    | 2     | 9 min  | 4.5 min  |
 
 **Recent Trend:**
 
-- Last 5 plans: 01-01 (13 min), 01-02 (2 min), 02-01 (4 min)
-- Trend: Improving (plans getting faster)
+- Last 5 plans: 01-01 (13 min), 01-02 (2 min), 02-01 (4 min), 02-02 (5 min)
+- Trend: Stable (Phase 2 plans consistently fast)
 
 _Updated after each plan completion_
 
@@ -73,6 +73,15 @@ Recent decisions affecting current work:
 - Section container utility class for consistent max-width and padding
 - CTAButton has 3 variants: hero, primary, header
 
+**From 02-02:**
+
+- Hero background: Mountain sunrise from Unsplash (peaceful, calming)
+- Hero layout: Left-aligned text with dark overlay for readability
+- Section rhythm: Alternating cream/white backgrounds for visual flow
+- About layout: Two-column (3/5 text, 2/5 decorative element)
+- How It Works: 4-step card grid with numbered indicators
+- Hero image uses priority prop for LCP optimization
+
 ### Pending Todos
 
 None yet.
@@ -84,10 +93,10 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-12 (plan execution)
-Stopped at: Completed 02-01-PLAN.md (Static Content & SEO)
+Stopped at: Completed 02-02-PLAN.md (Static Content & SEO)
 Resume file: None
 
 ---
 
 _State initialized: 2026-02-10_
-_Last updated: 2026-02-12 16:04_
+_Last updated: 2026-02-12 14:14_
