@@ -1,6 +1,7 @@
 'use client'
 
 import { motion, AnimatePresence } from 'framer-motion'
+import SpotlightCard from '@/components/ui/spotlight-card'
 
 interface FAQItemProps {
     faq: {
@@ -17,7 +18,10 @@ export function FAQItem({ faq, index, openIndex, toggle, mounted }: FAQItemProps
     const isOpen = openIndex === index
 
     return (
-        <div className="glass-panel border-none rounded-editorial-md overflow-hidden transition-all duration-500 premium-shadow hover:bg-white/40">
+        <SpotlightCard
+            spotlightColor="rgba(212, 175, 55, 0.14)"
+            className="glass-panel border-none rounded-editorial-md overflow-hidden transition-all duration-500 premium-shadow hover:bg-white/40 !p-0 !bg-transparent"
+        >
             <button
                 onClick={() => toggle(index)}
                 className="w-full flex items-center justify-between px-8 py-6 text-left hover:bg-neutral-50/20 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-inset group"
@@ -65,6 +69,6 @@ export function FAQItem({ faq, index, openIndex, toggle, mounted }: FAQItemProps
                     {faq.answer}
                 </div>
             )}
-        </div>
+        </SpotlightCard>
     )
 }

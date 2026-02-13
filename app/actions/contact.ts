@@ -17,8 +17,6 @@ export async function submitContactForm(data: z.infer<typeof contactSchema>) {
   }
 
   try {
-    // Log the submission for now — Resend integration can be added
-    // when RESEND_API_KEY is configured in environment variables
     console.info('Contact form submission:', {
       name: parsed.data.name,
       email: parsed.data.email,
@@ -27,14 +25,19 @@ export async function submitContactForm(data: z.infer<typeof contactSchema>) {
       timestamp: new Date().toISOString(),
     })
 
-    // If Resend is configured, send email notification
     if (process.env.RESEND_API_KEY) {
       const { Resend } = await import('resend')
       const resend = new Resend(process.env.RESEND_API_KEY)
 
+      const fromEmail = process.env.CONTACT_FROM_EMAIL || 'noreply@reiki-practice.ch'
+      const toEmail =
+        process.env.CONTACT_EMAIL ||
+        process.env.NEXT_PUBLIC_CONTACT_EMAIL ||
+        'info@reiki-practice.ch'
+
       await resend.emails.send({
-        from: 'Reiki Practice <noreply@reiki-practice.ch>',
-        to: process.env.CONTACT_EMAIL || 'info@reiki-practice.ch',
+        from: `${process.env.NEXT_PUBLIC_PRACTICE_NAME || 'Reiki Practice'} <${fromEmail}>`,
+        to: toEmail,
         subject: `New Contact: ${parsed.data.name}`,
         text: `
 Name: ${parsed.data.name}

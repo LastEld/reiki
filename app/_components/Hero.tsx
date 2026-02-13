@@ -52,6 +52,10 @@ export default function Hero() {
     mouseY.set(0)
   }
 
+  const handleMethodologyClick = () => {
+    document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })
+  }
+
   if (!mounted) {
     return (
       <section ref={containerRef} id="hero" className="relative h-screen flex items-center overflow-hidden bg-black">
@@ -134,7 +138,11 @@ export default function Hero() {
               className="flex flex-col sm:flex-row gap-6"
             >
               <CTAButton variant="hero" text={t('cta')} targetId="pricing" className="!px-12 !py-5 !text-lg !rounded-editorial-md" />
-              <button className="px-10 py-5 rounded-editorial-md border border-white/10 text-white font-bold hover:bg-white/5 transition-all uppercase tracking-widest text-sm">
+              <button
+                type="button"
+                onClick={handleMethodologyClick}
+                className="px-10 py-5 rounded-editorial-md border border-white/10 text-white font-bold hover:bg-white/5 transition-all uppercase tracking-widest text-sm"
+              >
                 {t('methodology')}
               </button>
             </motion.div>

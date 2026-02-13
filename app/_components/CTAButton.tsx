@@ -3,6 +3,7 @@
 import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
 import { useHasMounted } from '../_hooks/useHasMounted'
+import { cn } from '@/lib/utils'
 
 interface CTAButtonProps {
   text?: string
@@ -38,7 +39,7 @@ export default function CTAButton({
     return (
       <button
         onClick={handleClick}
-        className={`${variantStyles[variant]} font-medium ${className}`}
+        className={cn(variantStyles[variant], 'font-medium', className)}
       >
         {defaultText}
       </button>
@@ -50,7 +51,11 @@ export default function CTAButton({
       whileHover={{ scale: 1.05, backgroundColor: '#d97706' }}
       whileTap={{ scale: 0.95 }}
       onClick={handleClick}
-      className={`${variantStyles[variant]} font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2 transition-colors duration-200 ${className}`}
+      className={cn(
+        variantStyles[variant],
+        'font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 focus-visible:ring-offset-2 transition-colors duration-200',
+        className,
+      )}
     >
       {defaultText}
     </motion.button>

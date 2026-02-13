@@ -1,6 +1,7 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
+import { practiceProfile } from '@/lib/practice'
 
 export default function PrivacyPage() {
   const t = useTranslations('Privacy')
@@ -54,8 +55,8 @@ export default function PrivacyPage() {
             <p>{t('contactText')}</p>
             <p>
               E-Mail:{' '}
-              <a href="mailto:info@reiki-practice.ch" className="text-primary-600 hover:underline">
-                info@reiki-practice.ch
+              <a href={`mailto:${practiceProfile.contact.email}`} className="text-primary-600 hover:underline">
+                {practiceProfile.contact.email}
               </a>
             </p>
           </div>

@@ -7,25 +7,55 @@ import PricingSection from '../_components/PricingSection'
 import FAQSection from '../_components/FAQSection'
 import BookingSection from '../_components/BookingSection'
 import ContactSection from '../_components/ContactSection'
+import { practiceAddressLine, practiceProfile } from '@/lib/practice'
 
 export default function Home() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    name: 'Reiki Healing Practice',
+    name: practiceProfile.businessName,
     description:
-      'Professional Reiki healing and energy work sessions for stress relief, emotional balance, and holistic wellness',
+      'Private Reiki sessions for stress relief, emotional balance, and holistic well-being.',
+    url: practiceProfile.siteUrl,
     image: '/opengraph-image',
-    telephone: '+41-XX-XXX-XX-XX',
-    email: 'info@reiki-practice.ch',
+    telephone: practiceProfile.contact.phoneDisplay,
+    email: practiceProfile.contact.email,
     priceRange: '$$',
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Zürich',
-      addressCountry: 'CH',
+      streetAddress: practiceProfile.contact.street,
+      postalCode: practiceProfile.contact.postalCode,
+      addressLocality: practiceProfile.contact.city,
+      addressCountry: practiceProfile.contact.countryCode,
     },
-    openingHours: 'Mo-Sa 10:00-20:00',
-    sameAs: [],
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: practiceProfile.contact.latitude,
+      longitude: practiceProfile.contact.longitude,
+    },
+    openingHours: practiceProfile.openingHours.schema,
+    sameAs: practiceProfile.socialUrls,
+    areaServed: {
+      '@type': 'City',
+      name: practiceProfile.contact.city,
+    },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: practiceProfile.contact.phoneDisplay,
+      email: practiceProfile.contact.email,
+      contactType: 'customer service',
+    },
+    location: {
+      '@type': 'Place',
+      name: practiceAddressLine,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: practiceProfile.contact.street,
+        postalCode: practiceProfile.contact.postalCode,
+        addressLocality: practiceProfile.contact.city,
+        addressCountry: practiceProfile.contact.countryCode,
+      },
+    },
   }
 
   return (

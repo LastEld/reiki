@@ -10,8 +10,8 @@ export default function LanguageSwitcher() {
   const pathname = usePathname()
   const t = useTranslations('LanguageSwitcher')
 
-  const switchLocale = (newLocale: string) => {
-    router.replace(pathname, { locale: newLocale as 'de' | 'fr' | 'en' | 'ru' | 'it' })
+  const switchLocale = (newLocale: (typeof routing.locales)[number]) => {
+    router.replace(pathname, { locale: newLocale })
   }
 
   return (

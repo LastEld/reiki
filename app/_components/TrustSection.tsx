@@ -5,6 +5,7 @@ import { Award, Shield, Heart } from 'lucide-react'
 import { useHasMounted } from '../_hooks/useHasMounted'
 import ScrollReveal from './ScrollReveal'
 import SpotlightCard from '@/components/ui/spotlight-card'
+import SplitText from '@/components/ui/split-text'
 
 export default function TrustSection() {
   const t = useTranslations('Trust')
@@ -25,9 +26,14 @@ export default function TrustSection() {
       <div className="section-container">
         <ScrollReveal>
           <div className="text-center mb-16">
-            <h2 className="font-heading text-3xl md:text-5xl font-bold text-primary-900 mb-4">
-              {t('title')}
-            </h2>
+            <SplitText
+              text={t('title')}
+              className="font-heading text-3xl md:text-5xl font-bold text-primary-900 mb-4"
+              delay={25}
+              duration={1}
+              tag="h2"
+              textAlign="center"
+            />
             <div className="w-24 h-1 bg-accent-500 mx-auto rounded-editorial-full opacity-60" />
           </div>
         </ScrollReveal>

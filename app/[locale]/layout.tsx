@@ -1,9 +1,11 @@
 import type { Metadata } from 'next'
+import type { ReactNode } from 'react'
 import { NextIntlClientProvider, hasLocale } from 'next-intl'
 import { setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
-import { routing } from '@/i18n/routing'
 import { Playfair_Display, Inter } from 'next/font/google'
+import { routing } from '@/i18n/routing'
+import { practiceProfile } from '@/lib/practice'
 import Header from '../_components/Header'
 import Footer from '../_components/Footer'
 import CookieConsent from '../_components/CookieConsent'
@@ -27,24 +29,24 @@ export function generateStaticParams() {
 
 const localeMetadata: Record<string, { title: string; description: string; keywords: string[] }> = {
   de: {
-    title: 'Reiki Behandlung Zürich | Energieheilung & innere Balance',
+    title: 'Reiki in Zürich | Energetische Balance und tiefe Entspannung',
     description:
-      'Professionelle Reiki-Sitzungen in Zürich. Zertifizierter Reiki-Praktiker hilft Ihnen, Stress abzubauen, Balance wiederherzustellen und Ihr Wohlbefinden zu fördern.',
+      'Professionelle Reiki-Sitzungen in Zürich für Stressabbau, innere Ruhe und mehr Wohlbefinden.',
     keywords: [
       'Reiki Zürich',
       'Reiki Behandlung',
-      'Energieheilung',
       'Stressabbau',
-      'ganzheitliche Gesundheit',
-      'Reiki Therapie Schweiz',
+      'Energiearbeit',
+      'Ganzheitliche Gesundheit',
+      'Reiki Schweiz',
     ],
   },
   fr: {
-    title: 'Séance Reiki Zürich | Guérison énergétique & équilibre intérieur',
+    title: 'Reiki à Zurich | Équilibre intérieur et détente profonde',
     description:
-      'Séances de Reiki professionnelles à Zürich. Praticien certifié pour réduire le stress, restaurer l\'équilibre et favoriser votre bien-être.',
+      'Séances professionnelles de Reiki à Zurich pour réduire le stress et retrouver votre équilibre.',
     keywords: [
-      'Reiki Zürich',
+      'Reiki Zurich',
       'séance Reiki',
       'guérison énergétique',
       'réduction du stress',
@@ -53,12 +55,12 @@ const localeMetadata: Record<string, { title: string; description: string; keywo
     ],
   },
   en: {
-    title: 'Reiki Healing Zürich | Energy Healing & Inner Balance',
+    title: `Reiki in ${practiceProfile.contact.city} | Calm, Clarity, and Balance`,
     description:
-      'Professional Reiki healing sessions in Zürich, Switzerland. Certified practitioner helping you release stress, restore balance, and promote wellness.',
+      'Private Reiki sessions to relieve stress, calm the nervous system, and restore emotional balance.',
     keywords: [
       'Reiki Zürich',
-      'Reiki healing',
+      'Reiki session',
       'energy healing',
       'stress relief',
       'holistic wellness',
@@ -66,25 +68,25 @@ const localeMetadata: Record<string, { title: string; description: string; keywo
     ],
   },
   ru: {
-    title: 'Рейки Цюрих | Энергетическое исцеление и внутренний баланс',
+    title: 'Рейки в Цюрихе | Спокойствие, ясность и внутренний баланс',
     description:
-      'Профессиональные сеансы Рейки в Цюрихе, Швейцария. Сертифицированный практик поможет снять стресс, восстановить баланс и улучшить самочувствие.',
+      'Индивидуальные сеансы Рейки в Цюрихе для снижения стресса, восстановления энергии и эмоционального равновесия.',
     keywords: [
       'Рейки Цюрих',
-      'сеансы Рейки',
-      'энергетическое исцеление',
+      'сеанс Рейки',
+      'энергетическая практика',
       'снятие стресса',
-      'холистическое здоровье',
+      'гармония',
       'Рейки Швейцария',
     ],
   },
   it: {
-    title: 'Seduta Reiki Zurigo | Guarigione energetica e equilibrio interiore',
+    title: 'Reiki a Zurigo | Equilibrio interiore e benessere',
     description:
-      'Sedute professionali di Reiki a Zurigo. Praticante certificato per ridurre lo stress, ripristinare l\'equilibrio e favorire il benessere.',
+      'Sessioni professionali di Reiki a Zurigo per ridurre lo stress e ristabilire l’equilibrio.',
     keywords: [
       'Reiki Zurigo',
-      'seduta Reiki',
+      'sessione Reiki',
       'guarigione energetica',
       'riduzione stress',
       'benessere olistico',
@@ -101,13 +103,11 @@ export async function generateMetadata({
   const { locale } = await params
   const meta = localeMetadata[locale] || localeMetadata.de
 
-  const baseUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
-    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : 'http://localhost:3000'
-
+  const baseUrl = practiceProfile.siteUrl
   const alternates: Record<string, string> = {}
+
   for (const loc of routing.locales) {
-    const prefix = loc === routing.defaultLocale ? '' : `/${loc}`
+    const prefix = `/${loc}`
     alternates[loc] = `${baseUrl}${prefix}`
   }
 
@@ -116,12 +116,14 @@ export async function generateMetadata({
     description: meta.description,
     keywords: meta.keywords,
     alternates: {
-      canonical: alternates[locale],
+      canonical: alternates[locale] || `${baseUrl}/`,
       languages: alternates,
     },
     openGraph: {
       type: 'website',
-      locale: locale,
+      locale,
+      siteName: practiceProfile.businessName,
+      url: alternates[locale] || `${baseUrl}/`,
       title: meta.title,
       description: meta.description,
       images: ['/opengraph-image.jpg'],
@@ -130,7 +132,7 @@ export async function generateMetadata({
 }
 
 type Props = {
-  children: React.ReactNode
+  children: ReactNode
   params: Promise<{ locale: string }>
 }
 

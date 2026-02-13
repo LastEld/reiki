@@ -1,6 +1,7 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
+import { practiceAddressLine, practiceProfile } from '@/lib/practice'
 
 export default function ImpressumPage() {
   const t = useTranslations('Impressum')
@@ -16,16 +17,16 @@ export default function ImpressumPage() {
             <h2 className="font-heading text-xl font-bold text-primary-900 mb-2">
               {t('operatorTitle')}
             </h2>
-            <p>Reiki Practice</p>
-            <p>Oleg</p>
-            <p>Zürich, Switzerland</p>
+            <p>{practiceProfile.businessName}</p>
+            <p>{practiceProfile.practitionerName}</p>
+            <p>{practiceAddressLine}</p>
             <p>
               E-Mail:{' '}
-              <a href="mailto:info@reiki-practice.ch" className="text-primary-600 hover:underline">
-                info@reiki-practice.ch
+              <a href={`mailto:${practiceProfile.contact.email}`} className="text-primary-600 hover:underline">
+                {practiceProfile.contact.email}
               </a>
             </p>
-            <p>Tel: +41 XX XXX XX XX</p>
+            <p>Tel: {practiceProfile.contact.phoneDisplay}</p>
           </div>
 
           <div>

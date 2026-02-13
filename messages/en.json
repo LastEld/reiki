@@ -6,78 +6,78 @@
     "pricing": "Pricing",
     "faq": "FAQ",
     "contact": "Contact",
-    "cta": "Schedule Consultation",
+    "cta": "Book a Session",
     "brandName": "The Atelier",
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
   },
   "Hero": {
-    "title": "The Art of Profound Decompression",
-    "subtitle": "Discover a daring silence. Elegant Reiki sessions designed to dissolve boundaries and restore your visceral harmony in the heart of Zürich.",
-    "cta": "Experience Stillness",
-    "atelierLabel": "The Atelier of Restorative Arts",
-    "methodology": "The Methodology",
-    "scrollToBreathe": "Scroll to Breathe"
+    "title": "Reiki in Zurich for Calm, Clarity, and Balance",
+    "subtitle": "Private 1:1 Reiki sessions to release stress, settle the nervous system, and restore your inner rhythm.",
+    "cta": "Book Your Session",
+    "atelierLabel": "Certified Reiki Practice",
+    "methodology": "How Sessions Work",
+    "scrollToBreathe": "Scroll and Exhale"
   },
   "About": {
-    "title": "A Daring Presence",
-    "philosophyLabel": "The Philosophy",
-    "stillnessTitle": "Essential Stillness",
-    "stillnessDesc": "A curated experience of presence and restoration, designed for those seeking a profound return to the self within the city's pulse.",
-    "p1": "Reiki is an ancient Japanese art of restoration, channeling universal life energy through the intimacy of touch. In our Zürich atelier, we cultivate a space for the daring—those ready to surrender to the profound power of silence and energetic resonance.",
-    "p2": "Our sessions are an invitation to absolute presence. You will experience an elegant transition from cognitive noise to a deep, visceral clarity, allowing your body to reconnect with its most essential, vibrant state.",
-    "p3": "Beyond simple wellness, our practice is a commitment to your internal elegance—mitigating the intensity of urban life and nurturing a harmony that is both powerful and refined."
+    "title": "A Gentle, Grounded Practice",
+    "philosophyLabel": "Approach",
+    "stillnessTitle": "Space to Reconnect",
+    "stillnessDesc": "You are guided into a slower pace where body and mind can settle, reset, and recover.",
+    "p1": "Reiki is a Japanese energy practice that supports deep relaxation and emotional balance through calm, intentional touch or hands held just above the body.",
+    "p2": "Each session is tailored to how you feel that day. We begin with a short check-in, then move into quiet, focused bodywork in a warm and private setting.",
+    "p3": "Clients often leave feeling lighter, clearer, and more present. The goal is not quick fixes, but sustainable nervous-system support you can build on."
   },
   "HowItWorks": {
     "title": "How a Session Works",
-    "subtitle": "Each Reiki session is a journey of relaxation and restoration. Here's what you can expect during your visit.",
-    "step1Title": "Consultation",
-    "step1Desc": "We begin with a brief discussion of your goals, health history, and what you can expect from the session.",
-    "step2Title": "Preparation",
-    "step2Desc": "You relax fully clothed on a comfortable treatment table in a peaceful, calming environment.",
-    "step3Title": "Energy Work",
-    "step3Desc": "Gentle hand placement on or above the body channels healing energy to areas of tension and imbalance.",
+    "subtitle": "A simple, structured process so you always know what to expect.",
+    "step1Title": "Arrival & Check-in",
+    "step1Desc": "We discuss how you are feeling today, your goals, and any physical or emotional concerns.",
+    "step2Title": "Settling In",
+    "step2Desc": "You remain fully clothed and lie comfortably on the treatment table while the space is prepared for stillness.",
+    "step3Title": "Reiki Session",
+    "step3Desc": "Hands are placed lightly on or just above specific areas to support release, regulation, and energetic flow.",
     "step4Title": "Integration",
-    "step4Desc": "Time to absorb the experience, followed by a brief discussion of sensations and next steps."
+    "step4Desc": "We close with a short debrief and practical aftercare suggestions for the next 24?48 hours."
   },
   "Benefits": {
-    "title": "Benefits & Effects",
-    "benefitsLabel": "The Results",
-    "subtitle": "Reiki sessions can bring a wide range of positive effects. While individual experiences vary, here are some of the most commonly reported benefits.",
+    "title": "What Reiki Can Support",
+    "benefitsLabel": "Outcomes",
+    "subtitle": "Effects vary by person, but these are the changes clients most often report after consistent sessions.",
     "benefit1": {
-      "title": "Stress Relief",
-      "desc": "Reiki promotes deep relaxation, helping release tension and reduce the physical and emotional effects of stress."
+      "title": "Stress Reset",
+      "desc": "Deep relaxation helps lower physical and emotional tension accumulated from daily overload."
     },
     "benefit2": {
-      "title": "Emotional Balance",
-      "desc": "Sessions can help process difficult emotions, creating a sense of calm and emotional stability."
+      "title": "Emotional Stability",
+      "desc": "Sessions can create more emotional space, making reactions softer and recovery faster."
     },
     "benefit3": {
-      "title": "Better Sleep",
-      "desc": "Many clients report improved sleep quality and easier ability to relax before bedtime."
+      "title": "Better Sleep Quality",
+      "desc": "Many clients fall asleep faster, wake less often, and feel more restored in the morning."
     },
     "benefit4": {
-      "title": "Pain Management",
-      "desc": "Reiki may help reduce discomfort and support the body's natural pain management processes."
+      "title": "Pain & Tension Relief",
+      "desc": "Reiki may reduce the intensity of body discomfort and help release long-held muscular guarding."
     },
     "benefit5": {
-      "title": "Mental Clarity",
-      "desc": "Experience clearer thinking, improved focus, and a greater sense of presence and awareness."
+      "title": "Clearer Thinking",
+      "desc": "As internal noise lowers, focus improves and decisions feel more grounded."
     },
     "benefit6": {
-      "title": "Energy Restoration",
-      "desc": "Feel revitalized as Reiki helps restore the natural flow and balance of your body's energy."
+      "title": "Energy Recovery",
+      "desc": "Clients often report steady energy through the day instead of sharp spikes and crashes."
     },
-    "disclaimer": "Results vary by individual. Reiki is a complementary practice and should not replace professional medical advice."
+    "disclaimer": "Reiki is a complementary wellness practice and not a replacement for medical diagnosis or treatment."
   },
   "Trust": {
     "title": "Your Practitioner",
     "name": "Oleg",
     "role": "Certified Reiki Practitioner",
     "qual1": "Usui Reiki Level III / Master",
-    "qual2": "5+ years of practice experience",
+    "qual2": "5+ years of practical experience",
     "qual3": "Certified by International Reiki Association",
-    "bio": "I believe that healing comes from within, and my role is to facilitate that natural process. With deep respect for the Reiki tradition and a commitment to continuous learning, I create a safe, nurturing space for your healing journey.",
+    "bio": "My work is to create a safe, steady environment where your system can downshift and restore itself. I combine traditional Reiki principles with clear session structure, so each visit feels both gentle and purposeful.",
     "sessions": "Sessions",
     "sessionsCount": "200+",
     "experience": "Experience",
@@ -86,56 +86,56 @@
     "certifiedLevel": "Master"
   },
   "Pricing": {
-    "title": "Pricing & Services",
-    "subtitle": "Choose the option that best fits your needs",
+    "title": "Services & Pricing",
+    "subtitle": "Choose the format that best matches your current needs.",
     "singleName": "Single Session",
     "singleDuration": "60 minutes",
-    "singleF1": "Full Reiki session",
-    "singleF2": "Pre-session consultation",
-    "singleF3": "Post-session guidance",
-    "courseName": "Course of 3 Sessions",
-    "courseBadge": "Best Value",
+    "singleF1": "60-minute full Reiki session",
+    "singleF2": "Short intake before the session",
+    "singleF3": "Personalized aftercare notes",
+    "courseName": "Package of 3 Sessions",
+    "courseBadge": "Most Popular",
     "courseSavings": "Save 15%",
     "courseDuration": "60 minutes each",
     "courseF1": "Everything in Single Session",
-    "courseF2": "Personalized treatment plan",
-    "courseF3": "Progress tracking between sessions",
-    "courseF4": "Priority scheduling",
-    "intensiveName": "Intensive Program",
-    "intensiveDuration": "5 sessions + follow-up",
+    "courseF2": "Consistent weekly or bi-weekly rhythm",
+    "courseF3": "Progress check after each visit",
+    "courseF4": "Priority booking windows",
+    "intensiveName": "Intensive Support Program",
+    "intensiveDuration": "5 sessions + follow-up review",
     "intensiveF1": "Everything in Course of 3",
-    "intensiveF2": "Extended initial assessment",
-    "intensiveF3": "Customized healing protocol",
+    "intensiveF2": "Extended first intake",
+    "intensiveF3": "Personalized support protocol",
     "intensiveF4": "Email support between sessions",
-    "intensiveF5": "Follow-up consultation",
+    "intensiveF5": "Final progress review",
     "bookNow": "Book Now",
-    "note": "All prices include consultation. Package sessions can be used within 3 months."
+    "note": "Consultation is included in every session. Packages are valid for 3 months."
   },
   "FAQ": {
     "title": "Frequently Asked Questions",
-    "subtitle": "Find answers to common questions about Reiki healing and what to expect.",
+    "subtitle": "Clear answers before your first session.",
     "q1": "What is Reiki and how does it work?",
-    "a1": "Reiki is a Japanese energy healing technique developed in the early 20th century. During a session, the practitioner places their hands lightly on or just above the body to channel universal life energy. This gentle process promotes relaxation, reduces stress, and supports the body's natural healing processes.",
+    "a1": "Reiki is a Japanese energy practice where the practitioner uses gentle hand positions on or above the body. The process supports nervous-system regulation, deep relaxation, and the body?s natural recovery processes.",
     "q2": "What should I expect during my first session?",
-    "a2": "Your first session begins with a brief consultation to discuss your goals and any concerns. You'll remain fully clothed and lie comfortably on a treatment table. The session lasts about 60 minutes, during which you may feel warmth, tingling, or deep relaxation. Many people feel calm and refreshed afterward.",
+    "a2": "We start with a short conversation, then you rest fully clothed on a treatment table for about 60 minutes. People commonly report warmth, heaviness, tingling, or a deep sense of calm.",
     "q3": "How many sessions do I need?",
-    "a3": "The number of sessions varies depending on your goals. Some people feel significant benefits after a single session, while others prefer regular sessions for ongoing wellness. I typically recommend starting with 3 sessions to fully experience the benefits, and we'll discuss a personalized plan during your consultation.",
+    "a3": "Some people feel better after one session, but a series of 3 sessions usually gives a clearer and more stable result. We decide together based on your goals.",
     "q4": "Is Reiki safe? Are there any side effects?",
-    "a4": "Reiki is a non-invasive, gentle practice considered safe for people of all ages. There are no known negative side effects. Some people may experience mild emotional release or feel temporarily tired after a session, which is a normal part of the body's relaxation response.",
+    "a4": "Reiki is non-invasive and considered low-risk. Occasionally people feel emotionally sensitive or tired for a short period afterward, which usually passes quickly.",
     "q5": "Can Reiki replace medical treatment?",
-    "a5": "No. Reiki is a complementary practice that works alongside conventional medical treatment, not as a replacement. It can support your overall well-being and help manage stress, but you should always consult your healthcare provider for medical concerns.",
+    "a5": "No. Reiki complements medical care but does not replace diagnosis, treatment, or medical advice from a licensed professional.",
     "q6": "How do I prepare for a session?",
-    "a6": "Wear comfortable, loose-fitting clothing. Avoid heavy meals or caffeine right before the session. Come with an open mind and be ready to relax. It's helpful to drink water before and after the session to support your body's natural processes.",
+    "a6": "Wear comfortable clothing, avoid heavy meals right before the session, and drink water before and after. Arrive a few minutes early to settle in.",
     "q7": "Do you offer online or distance Reiki sessions?",
-    "a7": "Currently, all sessions are offered in-person at my practice in Zürich. In-person sessions allow for the most effective energy work and the best experience for both new and returning clients."
+    "a7": "At the moment, sessions are held in person in Zurich to provide the most focused and grounded experience."
   },
   "Booking": {
-    "title": "Book Your Session",
-    "subtitle": "Choose a time that works best for you. Your first consultation is complimentary."
+    "title": "Book Your Reiki Session",
+    "subtitle": "Pick a convenient time in the calendar below. If you are new, start with a single session."
   },
   "Contact": {
-    "title": "Get in Touch",
-    "subtitle": "Have questions or ready to book your first session? Send a message and I'll get back to you within 24 hours.",
+    "title": "Contact & Questions",
+    "subtitle": "Send a message and you will receive a response within 24 hours on business days.",
     "nameLabel": "Name",
     "namePlaceholder": "Your full name",
     "emailLabel": "Email",
@@ -144,22 +144,22 @@
     "phoneOptional": "(optional)",
     "phonePlaceholder": "+41 XX XXX XX XX",
     "messageLabel": "Message",
-    "messagePlaceholder": "Tell me about what you're looking for...",
+    "messagePlaceholder": "Tell me what you are experiencing and what kind of support you need...",
     "send": "Send Message",
     "sending": "Sending...",
-    "successTitle": "Message Sent!",
-    "successMessage": "Thank you for reaching out. I'll get back to you within 24 hours.",
+    "successTitle": "Message Received",
+    "successMessage": "Thank you for reaching out. You will get a reply within 24 hours on business days.",
     "sendAnother": "Send Another Message",
-    "errorMessage": "Something went wrong. Please try again or contact me directly.",
-    "contactInfo": "Contact Information",
+    "errorMessage": "Something went wrong. Please try again or contact directly by phone or email.",
+    "contactInfo": "Practice Contact Details",
     "location": "Zürich, Switzerland",
     "hours": "Opening Hours",
     "monFri": "Monday - Friday",
     "saturday": "Saturday",
     "sunday": "Sunday",
     "closed": "Closed",
-    "firstTimeTitle": "First Time?",
-    "firstTimeDesc": "Your first consultation is complimentary. We'll discuss your goals and what to expect from a Reiki session, with no obligation to book.",
+    "firstTimeTitle": "First Session?",
+    "firstTimeDesc": "A short intake is included so we can align your goals, current state, and the right session format.",
     "required": "required",
     "nameError": "Name must be at least 2 characters",
     "emailError": "Please enter a valid email address",
@@ -169,16 +169,16 @@
   },
   "Footer": {
     "brandName": "The Atelier",
-    "tagline": "Professional energy healing sessions to restore balance and promote wellness.",
+    "tagline": "Private Reiki sessions for stress relief, emotional steadiness, and sustainable recovery.",
     "allRightsReserved": "All rights reserved.",
     "quickLinks": "Quick Links",
     "contact": "Contact",
-    "disclaimer": "Reiki is a complementary practice and is not a substitute for professional medical treatment. Please consult your healthcare provider for medical concerns.",
+    "disclaimer": "Reiki complements professional medical care and does not replace diagnosis or treatment by licensed healthcare providers.",
     "impressum": "Impressum",
     "privacy": "Privacy Policy"
   },
   "Cookie": {
-    "message": "We use cookies to analyze site traffic and improve your experience. By accepting, you consent to our use of analytics cookies in accordance with FADP and GDPR.",
+    "message": "We use cookies to measure site performance and improve your experience. Analytics cookies are activated only with your consent.",
     "accept": "Accept",
     "decline": "Decline"
   },

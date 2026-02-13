@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl'
 import { useHasMounted } from '../_hooks/useHasMounted'
 import ScrollReveal from './ScrollReveal'
 import { PricingCard } from './PricingCard'
+import SplitText from '@/components/ui/split-text'
 
 export default function PricingSection() {
   const t = useTranslations('Pricing')
@@ -41,9 +42,14 @@ export default function PricingSection() {
       <div className="section-container">
         <ScrollReveal>
           <div className="text-center mb-spacing-lg">
-            <h2 className="font-heading text-4xl md:text-6xl font-black text-primary-900 mb-6 tracking-tighter">
-              {t('title')}
-            </h2>
+            <SplitText
+              text={t('title')}
+              className="font-heading text-4xl md:text-6xl font-black text-primary-900 mb-6 tracking-tighter"
+              delay={25}
+              duration={1}
+              tag="h2"
+              textAlign="center"
+            />
             <p className="text-neutral-500 text-xl max-w-2xl mx-auto font-light tracking-tight">{t('subtitle')}</p>
           </div>
         </ScrollReveal>

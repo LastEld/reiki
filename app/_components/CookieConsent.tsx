@@ -2,20 +2,25 @@
 
 import { useState } from 'react'
 import { useTranslations } from 'next-intl'
+import { useHasMounted } from '../_hooks/useHasMounted'
 
 export default function CookieConsent() {
-  const [visible, setVisible] = useState(() => {
-    if (typeof window === 'undefined') {
-      return false
-    }
-
-    return !localStorage.getItem('cookie-consent')
-  })
+  const [dismissed, setDismissed] = useState(false)
+  const mounted = useHasMounted()
   const t = useTranslations('Cookie')
+
+  if (!mounted || dismissed) {
+    return null
+  }
+
+  const hasConsent = Boolean(localStorage.getItem('cookie-consent'))
+  if (hasConsent) {
+    return null
+  }
 
   const accept = () => {
     localStorage.setItem('cookie-consent', 'accepted')
-    setVisible(false)
+    setDismissed(true)
     if (typeof window !== 'undefined' && window.gtag) {
       window.gtag('consent', 'update', {
         analytics_storage: 'granted',
@@ -25,10 +30,8 @@ export default function CookieConsent() {
 
   const decline = () => {
     localStorage.setItem('cookie-consent', 'declined')
-    setVisible(false)
+    setDismissed(true)
   }
-
-  if (!visible) return null
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 p-4">

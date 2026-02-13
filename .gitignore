@@ -51,6 +51,8 @@ nul
 .playwright-mcp/
 .vscode/
 build_log.txt
+test-results/
+playwright-report/
 
 # local audit screenshots
 audit-*.png

@@ -13,6 +13,7 @@ const eslintConfig = defineConfig([
     'out/**',
     'build/**',
     'next-env.d.ts',
+    '.playwright-mcp/**',
   ]),
   // Prettier config must be last to disable formatting rules
   prettierConfig,

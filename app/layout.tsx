@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 import { Inter, Playfair_Display } from 'next/font/google'
 import './globals.css'
+import { practiceProfile } from '@/lib/practice'
 
 const inter = Inter({
   variable: '--font-inter',
@@ -15,17 +16,12 @@ const playfairDisplay = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.VERCEL_PROJECT_PRODUCTION_URL
-      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-      : 'http://localhost:3000',
-  ),
+  metadataBase: new URL(practiceProfile.siteUrl),
   title: {
-    default: 'Reiki Healing Zürich | Reiki Behandlung Schweiz',
+    default: `${practiceProfile.businessName} | Reiki in ${practiceProfile.contact.city}`,
     template: '%s | Reiki Healing',
   },
-  description:
-    'Professional Reiki healing sessions in Zürich, Switzerland. Certified practitioner for stress relief, energy healing, and holistic wellness.',
+  description: `Professional Reiki sessions in ${practiceProfile.contact.city}, ${practiceProfile.contact.country}.`,
   twitter: {
     card: 'summary_large_image',
   },
@@ -38,9 +34,7 @@ type Props = {
 export default function RootLayout({ children }: Props) {
   return (
     <html suppressHydrationWarning>
-      <body
-        className={`${inter.variable} ${playfairDisplay.variable} antialiased`}
-      >
+      <body className={`${inter.variable} ${playfairDisplay.variable} antialiased`}>
         {children}
       </body>
     </html>

@@ -1,13 +1,14 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import { useHasMounted } from '../_hooks/useHasMounted'
 import CTAButton from './CTAButton'
 import LanguageSwitcher from './LanguageSwitcher'
+import { practiceProfile } from '@/lib/practice'
+import { Link } from '@/i18n/navigation'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -42,9 +43,9 @@ export default function Header() {
       <div className="section-container flex items-center justify-between">
         <Link href="/" className="flex items-center gap-spacing-xs group">
           <div className="w-10 h-10 bg-accent-500 rounded-editorial-sm flex items-center justify-center text-primary-50 font-serif font-bold text-xl group-hover:scale-105 transition-transform duration-500">
-            A
+            {practiceProfile.brandName.charAt(0)}
           </div>
-          <span className="font-heading font-black text-xl text-primary-900 tracking-tight uppercase">{t('brandName')}</span>
+          <span className="font-heading font-black text-xl text-primary-900 tracking-tight uppercase">{practiceProfile.brandName}</span>
         </Link>
 
         {/* Desktop Nav */}
