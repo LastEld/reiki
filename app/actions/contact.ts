@@ -19,7 +19,7 @@ export async function submitContactForm(data: z.infer<typeof contactSchema>) {
   try {
     // Log the submission for now — Resend integration can be added
     // when RESEND_API_KEY is configured in environment variables
-    console.log('Contact form submission:', {
+    console.info('Contact form submission:', {
       name: parsed.data.name,
       email: parsed.data.email,
       phone: parsed.data.phone || 'Not provided',

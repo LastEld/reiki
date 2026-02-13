@@ -1,79 +1,212 @@
+/* Tailwind CSS v4 directives - ignore IDE 'unknown at-rule' warnings */
 @import 'tailwindcss';
 
 @theme {
-  /* Primary palette: Calming blue-teal for trust and healing */
-  --color-primary-50: oklch(0.98 0.01 220);
-  --color-primary-100: oklch(0.95 0.02 220);
-  --color-primary-200: oklch(0.88 0.04 220);
-  --color-primary-300: oklch(0.78 0.08 220);
-  --color-primary-400: oklch(0.65 0.12 220);
-  --color-primary-500: oklch(0.55 0.14 220);
-  --color-primary-600: oklch(0.48 0.13 220);
-  --color-primary-700: oklch(0.40 0.11 220);
-  --color-primary-800: oklch(0.32 0.09 220);
-  --color-primary-900: oklch(0.25 0.07 220);
+  /* Editorial Daring Palette: Sensual & Sophisticated */
+  --color-primary-50: oklch(0.98 0.01 40);
+  /* Soft Cream Bone */
+  --color-primary-100: oklch(0.95 0.02 40);
+  --color-primary-200: oklch(0.9 0.03 40);
+  --color-primary-300: oklch(0.8 0.04 40);
+  --color-primary-400: oklch(0.6 0.05 40);
+  --color-primary-500: oklch(0.4 0.06 40);
+  --color-primary-600: oklch(0.3 0.07 40);
+  --color-primary-700: oklch(0.2 0.08 40);
+  --color-primary-800: oklch(0.15 0.05 40);
+  --color-primary-900: oklch(0.1 0.02 40);
+  /* Deep Charcoal */
 
-  /* Accent palette: Warm gold/amber for CTAs and highlights */
-  --color-accent-400: oklch(0.75 0.12 80);
-  --color-accent-500: oklch(0.68 0.15 75);
-  --color-accent-600: oklch(0.60 0.14 70);
+  /* Velvet & Gold Accents */
+  --color-accent-50: oklch(0.95 0.02 20);
+  --color-accent-100: oklch(0.9 0.05 20);
+  --color-accent-200: oklch(0.8 0.1 20);
+  --color-accent-300: oklch(0.6 0.15 20);
+  --color-accent-400: oklch(0.4 0.25 20);
+  /* Deep Crimson */
+  --color-accent-500: oklch(0.3 0.2 20);
+  /* Velvet */
+  --color-accent-600: oklch(0.2 0.15 20);
 
-  /* Neutral palette: Warm grays for softer wellness feel */
-  --color-neutral-50: oklch(0.98 0.005 60);
-  --color-neutral-100: oklch(0.96 0.005 60);
-  --color-neutral-200: oklch(0.90 0.008 60);
-  --color-neutral-300: oklch(0.80 0.010 60);
-  --color-neutral-400: oklch(0.65 0.012 60);
-  --color-neutral-500: oklch(0.52 0.012 60);
-  --color-neutral-600: oklch(0.42 0.010 60);
-  --color-neutral-700: oklch(0.35 0.008 60);
-  --color-neutral-800: oklch(0.25 0.006 60);
-  --color-neutral-900: oklch(0.18 0.005 60);
+  /* Gold highlights - Hardened for Accessibility */
+  --color-gold-400: oklch(0.85 0.12 85);
+  --color-gold-500: oklch(0.75 0.15 85);
 
-  /* Surface colors for backgrounds */
-  --color-surface-white: oklch(1 0 0);
-  --color-surface-cream: oklch(0.98 0.01 80);
-  --color-surface-dark: oklch(0.18 0.005 60);
+  /* Neutral tones */
+  --color-neutral-50: oklch(0.99 0.005 0);
+  --color-neutral-100: oklch(0.97 0.01 0);
+  --color-neutral-200: oklch(0.92 0.01 0);
+  --color-neutral-800: oklch(0.2 0.01 0);
+  --color-neutral-900: oklch(0.12 0.01 0);
 
-  /* Typography */
+  /* Typography: Editorial Serif for Headings */
   --font-heading: 'Playfair Display', serif;
-  --font-body: var(--font-geist-sans);
+  --font-body: 'Inter', system-ui, sans-serif;
 
-  /* Spacing tokens */
-  --spacing-section: 5rem;
-  --spacing-section-lg: 7rem;
+  /* Spacing Tokens - Expansive Editorial Scale */
+  --spacing-xs: 0.5rem;
+  /* 8px */
+  --spacing-sm: 1rem;
+  /* 16px */
+  --spacing-md: 2rem;
+  /* 32px - Luxurious jump */
+  --spacing-lg: 4rem;
+  /* 64px */
+  --spacing-xl: 8rem;
+  /* 128px */
+  --spacing-2xl: 12rem;
+  /* 192px */
+  --spacing-section: 16rem;
+  /* 256px - Vertical "Breathing Room" */
+
+  /* Editorial Surfaces */
+  --surface-cream: var(--color-primary-50);
+  --surface-paper: oklch(0.99 0.005 40);
+  --surface-glass: oklch(1 0 0 / 0.02);
+
+  /* Glass Effects - Strict oklch */
+  --glass-bg: oklch(1 0 0 / 0.02);
+  --glass-blur: blur(24px);
+  --glass-border: 1px solid oklch(0 0 0 / 0.05);
+
+  /* Radius Tokens - Strict Editorial */
+  --radius-editorial-sm: 1rem;
+  --radius-editorial-md: 2rem;
+  --radius-editorial-lg: 3rem;
+  --radius-editorial-full: 9999px;
+
+  /* Shadow Strategy */
+  --shadow-premium: 0 40px 100px -20px oklch(0 0 0 / 0.1);
 }
 
-/* Smooth scroll behavior */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Section container utility */
-@layer utilities {
-  .section-container {
-    max-width: 80rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+@layer base {
+  html {
+    scroll-behavior: smooth;
   }
 
-  @media (min-width: 640px) {
-    .section-container {
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-    }
+  body {
+    @apply font-body text-neutral-900 bg-neutral-50;
   }
 
-  @media (min-width: 1024px) {
-    .section-container {
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-  }
-
-  .text-balance {
+  h1,
+  h2,
+  h3,
+  h4,
+  .font-heading {
+    @apply font-heading font-black tracking-tighter;
     text-wrap: balance;
   }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto px-6 md:px-12;
+  }
+
+  .glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: var(--glass-border);
+  }
+
+  .premium-shadow {
+    box-shadow: var(--shadow-premium);
+  }
+
+  .aura-bg {
+    position: absolute;
+    width: 60vw;
+    height: 60vw;
+    background: radial-gradient(circle, var(--color-primary-100) 0%, oklch(1 0 0 / 0) 70%);
+    opacity: 0.4;
+    filter: blur(80px);
+    z-index: -1;
+    pointer-events: none;
+    animation: float 20s infinite alternate ease-in-out;
+  }
+
+  @keyframes float {
+    from {
+      transform: translate(-10%, -10%) rotate(0deg);
+    }
+
+    to {
+      transform: translate(10%, 10%) rotate(5deg);
+    }
+  }
+
+  .floating {
+    animation: floating 6s infinite ease-in-out;
+  }
+
+  @keyframes floating {
+    0% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-15px);
+    }
+
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  .breathe-reveal {
+    animation: breathe-reveal 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  @keyframes breathe-reveal {
+    0% {
+      opacity: 0;
+      filter: blur(10px) brightness(1.5);
+      transform: scale(0.98) translateY(10px);
+    }
+
+    100% {
+      opacity: 1;
+      filter: blur(0px) brightness(1);
+      transform: scale(1) translateY(0px);
+    }
+  }
+}
+
+/* Custom focus styles for better accessibility with design */
+:focus-visible {
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+}
+
+/* Base typography refinements */
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+  letter-spacing: -0.02em;
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-primary-900) 0%, var(--color-primary-600) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Responsive text utilities for i18n */
+.text-adaptive {
+  hyphens: auto;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Cyrillic text optimization - slightly smaller for Russian */
+[lang="ru"] p,
+[lang="ru"] .text-adaptive {
+  font-size: 0.95em;
+  line-height: 1.6;
 }

@@ -1,18 +1,17 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { useTranslations } from 'next-intl'
 
 export default function CookieConsent() {
-  const [visible, setVisible] = useState(false)
-  const t = useTranslations('Cookie')
-
-  useEffect(() => {
-    const consent = localStorage.getItem('cookie-consent')
-    if (!consent) {
-      setVisible(true)
+  const [visible, setVisible] = useState(() => {
+    if (typeof window === 'undefined') {
+      return false
     }
-  }, [])
+
+    return !localStorage.getItem('cookie-consent')
+  })
+  const t = useTranslations('Cookie')
 
   const accept = () => {
     localStorage.setItem('cookie-consent', 'accepted')

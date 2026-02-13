@@ -1,22 +1,17 @@
 import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
-import { Geist, Geist_Mono, Playfair_Display } from 'next/font/google'
+import { Inter, Playfair_Display } from 'next/font/google'
 import './globals.css'
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-})
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+const inter = Inter({
+  variable: '--font-inter',
   subsets: ['latin'],
 })
 
 const playfairDisplay = Playfair_Display({
   variable: '--font-playfair',
   subsets: ['latin', 'cyrillic'],
-  weight: ['400', '700'],
+  weight: ['400', '700', '900'],
 })
 
 export const metadata: Metadata = {
@@ -44,7 +39,7 @@ export default function RootLayout({ children }: Props) {
   return (
     <html suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} antialiased`}
+        className={`${inter.variable} ${playfairDisplay.variable} antialiased`}
       >
         {children}
       </body>

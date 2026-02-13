@@ -6,18 +6,27 @@
     "pricing": "Tarifs",
     "faq": "FAQ",
     "contact": "Contact",
-    "cta": "Prendre rendez-vous"
+    "cta": "Prendre rendez-vous",
+    "brandName": "L'Atelier",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
   },
   "Hero": {
-    "title": "Trouvez l'équilibre et la paix intérieure grâce au Reiki",
-    "subtitle": "Des séances professionnelles de guérison énergétique pour vous aider à relâcher le stress, restaurer l'harmonie et vous reconnecter à votre bien-être intérieur",
-    "cta": "Prendre rendez-vous"
+    "title": "L'Art de la Décompression Profonde",
+    "subtitle": "Découvrez un silence audacieux. Des séances de Reiki élégantes conçues pour dissoudre les frontières et restaurer votre harmonie viscérale au cœur de Zurich.",
+    "cta": "Vivre le Calme",
+    "atelierLabel": "L'Atelier des Arts Restaurateurs",
+    "methodology": "La Méthodologie",
+    "scrollToBreathe": "Faire défiler pour respirer"
   },
   "About": {
-    "title": "À propos du Reiki",
-    "p1": "Le Reiki est une pratique de guérison japonaise qui canalise l'énergie vitale universelle par un placement doux des mains. Le mot Reiki vient de deux mots japonais : <strong>Rei</strong> (universel) et <strong>Ki</strong> (énergie vitale). Fondé par Mikao Usui au début du XXe siècle, le Reiki est aujourd'hui pratiqué dans le monde entier comme approche complémentaire du bien-être et de la relaxation.",
-    "p2": "Lors d'une séance de Reiki, le praticien formé place ses mains légèrement sur le corps ou juste au-dessus, permettant au flux naturel d'énergie de soutenir les processus de guérison innés du corps. Le Reiki est non invasif, doux et profondément relaxant.",
-    "p3": "En tant que pratique complémentaire, le Reiki agit en parallèle des soins médicaux conventionnels pour favoriser l'équilibre, réduire le stress et soutenir le bien-être global. Il ne remplace pas un traitement médical professionnel, mais constitue une approche holistique pour nourrir l'harmonie entre le corps, l'esprit et l'âme."
+    "title": "Une Présence Audacieuse",
+    "philosophyLabel": "La Philosophie",
+    "stillnessTitle": "Quiétude Essentielle",
+    "stillnessDesc": "Une expérience curée de présence et de restauration, conçue pour ceux qui cherchent un retour profond vers soi-même au rythme de la ville.",
+    "p1": "Le Reiki est un art ancestral japonais de restauration, canalisant l'énergie vitale universelle par l'intimité du toucher. Dans notre atelier zurichois, nous cultivons un espace pour les audacieux — ceux prêts à s'abandonner au pouvoir profond du silence.",
+    "p2": "Nos séances sont une invitation à la présence absolue. Vous vivrez une transition élégante du bruit cognitif vers une clarté viscérale profonde, permettant à votre corps de se reconnecter avec son état le plus essentiel.",
+    "p3": "Au-delà du simple bien-être, notre pratique est un engagement envers votre élégance intérieure — atténuant l'intensité de la vie urbaine et nourrissant une harmonie à la fois puissante et raffinée."
   },
   "HowItWorks": {
     "title": "Déroulement d'une séance",
@@ -33,19 +42,32 @@
   },
   "Benefits": {
     "title": "Bienfaits & effets",
+    "benefitsLabel": "Les Résultats",
     "subtitle": "Les séances de Reiki peuvent apporter une large gamme d'effets positifs. Bien que les expériences individuelles varient, voici les bienfaits les plus fréquemment rapportés.",
-    "stressTitle": "Réduction du stress",
-    "stressDesc": "Le Reiki favorise une relaxation profonde, aidant à libérer les tensions et à réduire les effets physiques et émotionnels du stress.",
-    "emotionalTitle": "Équilibre émotionnel",
-    "emotionalDesc": "Les séances peuvent aider à traiter les émotions difficiles, créant un sentiment de calme et de stabilité émotionnelle.",
-    "sleepTitle": "Meilleur sommeil",
-    "sleepDesc": "De nombreux clients rapportent une amélioration de la qualité du sommeil et une plus grande facilité à se détendre avant le coucher.",
-    "painTitle": "Gestion de la douleur",
-    "painDesc": "Le Reiki peut aider à réduire l'inconfort et soutenir les processus naturels de gestion de la douleur du corps.",
-    "clarityTitle": "Clarté mentale",
-    "clarityDesc": "Expérimentez une pensée plus claire, une meilleure concentration et un plus grand sentiment de présence et de conscience.",
-    "energyTitle": "Restauration de l'énergie",
-    "energyDesc": "Sentez-vous revitalisé(e) alors que le Reiki aide à restaurer le flux naturel et l'équilibre de l'énergie de votre corps.",
+    "benefit1": {
+      "title": "Réduction du stress",
+      "desc": "Le Reiki favorise une relaxation profonde, aidant à libérer les tensions et à réduire les effets physiques et émotionnels du stress."
+    },
+    "benefit2": {
+      "title": "Équilibre émotionnel",
+      "desc": "Les séances peuvent aider à traiter les émotions difficiles, créant un sentiment de calme et de stabilité émotionnelle."
+    },
+    "benefit3": {
+      "title": "Meilleur sommeil",
+      "desc": "De nombreux clients rapportent une amélioration de la qualité du sommeil et une plus grande facilité à se détendre avant le coucher."
+    },
+    "benefit4": {
+      "title": "Gestion de la douleur",
+      "desc": "Le Reiki peut aider à réduire l'inconfort et soutenir les processus naturels de gestion de la douleur du corps."
+    },
+    "benefit5": {
+      "title": "Clarté mentale",
+      "desc": "Expérimentez une pensée plus claire, une meilleure concentration et un plus grand sentiment de présence et de conscience."
+    },
+    "benefit6": {
+      "title": "Restauration de l'énergie",
+      "desc": "Sentez-vous revitalisé(e) alors que le Reiki aide à restaurer le flux naturel et l'équilibre de l'énergie de votre corps."
+    },
     "disclaimer": "Les résultats varient selon les individus. Le Reiki est une pratique complémentaire et ne devrait pas remplacer un avis médical professionnel."
   },
   "Trust": {
@@ -57,8 +79,11 @@
     "qual3": "Certifié par l'International Reiki Association",
     "bio": "Je crois que la guérison vient de l'intérieur, et mon rôle est de faciliter ce processus naturel. Avec un profond respect pour la tradition Reiki et un engagement envers l'apprentissage continu, je crée un espace sûr et bienveillant pour votre parcours de guérison.",
     "sessions": "Séances",
+    "sessionsCount": "200+",
     "experience": "Expérience",
-    "certified": "Certifié"
+    "experienceCount": "5+",
+    "certified": "Certifié",
+    "certifiedLevel": "Maître"
   },
   "Pricing": {
     "title": "Tarifs & prestations",
@@ -138,10 +163,14 @@
     "required": "requis",
     "nameError": "Le nom doit contenir au moins 2 caractères",
     "emailError": "Veuillez saisir une adresse e-mail valide",
-    "messageError": "Le message doit contenir au moins 10 caractères"
+    "messageError": "Le message doit contenir au moins 10 caractères",
+    "phoneValue": "+41 XX XXX XX XX",
+    "emailValue": "info@reiki-practice.ch"
   },
   "Footer": {
+    "brandName": "L'Atelier",
     "tagline": "Séances professionnelles de guérison énergétique pour restaurer l'équilibre et favoriser le bien-être.",
+    "allRightsReserved": "Tous droits réservés.",
     "quickLinks": "Liens rapides",
     "contact": "Contact",
     "disclaimer": "Le Reiki est une pratique complémentaire et ne remplace pas un traitement médical professionnel. Veuillez consulter votre médecin pour toute question médicale.",
@@ -157,7 +186,8 @@
     "de": "Deutsch",
     "fr": "Français",
     "en": "English",
-    "ru": "Русский"
+    "ru": "Русский",
+    "it": "Italiano"
   },
   "Impressum": {
     "title": "Mentions légales",

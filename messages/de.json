@@ -6,18 +6,27 @@
     "pricing": "Preise",
     "faq": "FAQ",
     "contact": "Kontakt",
-    "cta": "Termin vereinbaren"
+    "cta": "Termin vereinbaren",
+    "brandName": "Das Atelier",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen"
   },
   "Hero": {
-    "title": "Finden Sie Balance und inneren Frieden durch Reiki-Heilung",
-    "subtitle": "Professionelle Energieheilungssitzungen, die Ihnen helfen, Stress abzubauen, Harmonie wiederherzustellen und sich mit Ihrem inneren Wohlbefinden zu verbinden",
-    "cta": "Termin vereinbaren"
+    "title": "Die Kunst der tiefen Dekompression",
+    "subtitle": "Entdecken Sie eine gewagte Stille. Elegante Reiki-Sitzungen, um Grenzen aufzulösen und Ihre viszerale Harmonie im Herzen von Zürich wiederherzustellen.",
+    "cta": "Stille erleben",
+    "atelierLabel": "Das Atelier der restaurativen Künste",
+    "methodology": "Die Methodik",
+    "scrollToBreathe": "Scrollen zum Atmen"
   },
   "About": {
-    "title": "Über Reiki",
-    "p1": "Reiki ist eine japanische Heilpraxis, die universelle Lebensenergie durch sanftes Auflegen der Hände kanalisiert. Das Wort Reiki setzt sich aus zwei japanischen Wörtern zusammen: <strong>Rei</strong> (universell) und <strong>Ki</strong> (Lebensenergie). Begründet von Mikao Usui zu Beginn des 20. Jahrhunderts, wird Reiki heute weltweit als ergänzender Ansatz für Wohlbefinden und Entspannung praktiziert.",
-    "p2": "Während einer Reiki-Sitzung legt der ausgebildete Praktiker seine Hände leicht auf oder knapp über den Körper, um den natürlichen Energiefluss zu unterstützen und die körpereigenen Heilungsprozesse zu fördern. Reiki ist nicht-invasiv, sanft und tief entspannend.",
-    "p3": "Als ergänzende Praxis wirkt Reiki zusammen mit der konventionellen medizinischen Versorgung, um Balance zu fördern, Stress zu reduzieren und das allgemeine Wohlbefinden zu unterstützen. Es ersetzt keine professionelle medizinische Behandlung, sondern ist ein ganzheitlicher Ansatz zur Pflege der Harmonie zwischen Geist, Körper und Seele."
+    "title": "Eine gewagte Präsenz",
+    "philosophyLabel": "Die Philosophie",
+    "stillnessTitle": "Essenzielle Stille",
+    "stillnessDesc": "Eine kuratierte Erfahrung von Präsenz und Erneuerung, entworfen für jene, die eine tiefgreifende Rückkehr zu sich selbst inmitten des städtischen Pulses suchen.",
+    "p1": "Reiki ist eine alte japanische Kunst der Erneuerung, die universelle Lebensenergie durch die Intimität der Berührung kanalisiert. In unserem Zürcher Atelier kultivieren wir einen Raum für die Mutigen – bereit, sich der tiefgreifenden Kraft der Stille hinzugeben.",
+    "p2": "Unsere Sitzungen sind eine Einladung zur absoluten Präsenz. Sie werden einen eleganten Übergang von kognitivem Rauschen zu einer tiefen, viszeralen Klarheit erleben, die es Ihrem Körper ermöglicht, sich wieder mit seinem wesentlichsten Zustand zu verbinden.",
+    "p3": "Jenseits einfacher Wellness ist unsere Praxis ein Bekenntnis zu Ihrer inneren Eleganz – sie mildert die Intensität des städtischen Lebens und pflegt eine Harmonie, die sowohl kraftvoll als auch raffiniert ist."
   },
   "HowItWorks": {
     "title": "Ablauf einer Sitzung",
@@ -33,19 +42,32 @@
   },
   "Benefits": {
     "title": "Vorteile & Wirkungen",
+    "benefitsLabel": "Die Resultate",
     "subtitle": "Reiki-Sitzungen können eine Vielzahl positiver Wirkungen entfalten. Obwohl individuelle Erfahrungen variieren, sind hier die am häufigsten berichteten Vorteile.",
-    "stressTitle": "Stressabbau",
-    "stressDesc": "Reiki fördert tiefe Entspannung, hilft Spannungen zu lösen und die körperlichen und emotionalen Auswirkungen von Stress zu reduzieren.",
-    "emotionalTitle": "Emotionale Balance",
-    "emotionalDesc": "Sitzungen können helfen, schwierige Emotionen zu verarbeiten und ein Gefühl der Ruhe und emotionalen Stabilität zu schaffen.",
-    "sleepTitle": "Besserer Schlaf",
-    "sleepDesc": "Viele Klienten berichten von verbesserter Schlafqualität und leichterem Entspannen vor dem Einschlafen.",
-    "painTitle": "Schmerzmanagement",
-    "painDesc": "Reiki kann helfen, Beschwerden zu lindern und die natürlichen Schmerzmanagement-Prozesse des Körpers zu unterstützen.",
-    "clarityTitle": "Geistige Klarheit",
-    "clarityDesc": "Erleben Sie klareres Denken, verbesserte Konzentration und ein grösseres Gefühl von Präsenz und Achtsamkeit.",
-    "energyTitle": "Energiewiederherstellung",
-    "energyDesc": "Fühlen Sie sich revitalisiert, während Reiki hilft, den natürlichen Fluss und die Balance Ihrer Körperenergie wiederherzustellen.",
+    "benefit1": {
+      "title": "Stressabbau",
+      "desc": "Reiki fördert tiefe Entspannung, hilft Spannungen zu lösen und die körperlichen und emotionalen Auswirkungen von Stress zu reduzieren."
+    },
+    "benefit2": {
+      "title": "Emotionale Balance",
+      "desc": "Sitzungen können helfen, schwierige Emotionen zu verarbeiten und ein Gefühl der Ruhe und emotionalen Stabilität zu schaffen."
+    },
+    "benefit3": {
+      "title": "Besserer Schlaf",
+      "desc": "Viele Klienten berichten von verbesserter Schlafqualität und leichterem Entspannen vor dem Einschlafen."
+    },
+    "benefit4": {
+      "title": "Schmerzmanagement",
+      "desc": "Reiki kann helfen, Beschwerden zu lindern und die natürlichen Schmerzmanagement-Prozesse des Körpers zu unterstützen."
+    },
+    "benefit5": {
+      "title": "Geistige Klarheit",
+      "desc": "Erleben Sie klareres Denken, verbesserte Konzentration und ein grösseres Gefühl von Präsenz und Achtsamkeit."
+    },
+    "benefit6": {
+      "title": "Energiewiederherstellung",
+      "desc": "Fühlen Sie sich revitalisiert, während Reiki hilft, den natürlichen Fluss und die Balance Ihrer Körperenergie wiederherzustellen."
+    },
     "disclaimer": "Ergebnisse variieren individuell. Reiki ist eine ergänzende Praxis und sollte nicht professionelle medizinische Beratung ersetzen."
   },
   "Trust": {
@@ -57,8 +79,11 @@
     "qual3": "Zertifiziert durch die International Reiki Association",
     "bio": "Ich glaube, dass Heilung von innen kommt, und meine Aufgabe ist es, diesen natürlichen Prozess zu unterstützen. Mit tiefem Respekt vor der Reiki-Tradition und dem Engagement für kontinuierliches Lernen schaffe ich einen sicheren, nährenden Raum für Ihre Heilungsreise.",
     "sessions": "Sitzungen",
+    "sessionsCount": "200+",
     "experience": "Erfahrung",
-    "certified": "Zertifiziert"
+    "experienceCount": "5+",
+    "certified": "Zertifiziert",
+    "certifiedLevel": "Meister"
   },
   "Pricing": {
     "title": "Preise & Leistungen",
@@ -138,10 +163,14 @@
     "required": "erforderlich",
     "nameError": "Name muss mindestens 2 Zeichen lang sein",
     "emailError": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
-    "messageError": "Nachricht muss mindestens 10 Zeichen lang sein"
+    "messageError": "Nachricht muss mindestens 10 Zeichen lang sein",
+    "phoneValue": "+41 XX XXX XX XX",
+    "emailValue": "info@reiki-practice.ch"
   },
   "Footer": {
-    "tagline": "Professionelle Energieheilungssitzungen zur Wiederherstellung von Balance und Förderung des Wohlbefindens.",
+    "brandName": "Das Atelier",
+    "allRightsReserved": "Alle Rechte vorbehalten.",
+    "tagline": "Holistische Reiki-Heilung für tiefe Entspannung, emotionales Gleichgewicht und körperliches Wohlbefinden in Zürich.",
     "quickLinks": "Schnelllinks",
     "contact": "Kontakt",
     "disclaimer": "Reiki ist eine ergänzende Praxis und kein Ersatz für professionelle medizinische Behandlung. Bitte konsultieren Sie bei medizinischen Fragen Ihren Arzt.",
@@ -157,7 +186,8 @@
     "de": "Deutsch",
     "fr": "Français",
     "en": "English",
-    "ru": "Русский"
+    "ru": "Русский",
+    "it": "Italiano"
   },
   "Impressum": {
     "title": "Impressum",

@@ -6,18 +6,27 @@
     "pricing": "Pricing",
     "faq": "FAQ",
     "contact": "Contact",
-    "cta": "Schedule Consultation"
+    "cta": "Schedule Consultation",
+    "brandName": "The Atelier",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   },
   "Hero": {
-    "title": "Find Balance and Inner Peace Through Reiki Healing",
-    "subtitle": "Professional energy healing sessions to help you release stress, restore harmony, and reconnect with your inner well-being",
-    "cta": "Schedule Consultation"
+    "title": "The Art of Profound Decompression",
+    "subtitle": "Discover a daring silence. Elegant Reiki sessions designed to dissolve boundaries and restore your visceral harmony in the heart of Zürich.",
+    "cta": "Experience Stillness",
+    "atelierLabel": "The Atelier of Restorative Arts",
+    "methodology": "The Methodology",
+    "scrollToBreathe": "Scroll to Breathe"
   },
   "About": {
-    "title": "About Reiki",
-    "p1": "Reiki is a Japanese healing practice that channels universal life energy through gentle hand placement. The word Reiki comes from two Japanese words: <strong>Rei</strong> (universal) and <strong>Ki</strong> (life energy). Founded by Mikao Usui in the early 20th century, Reiki has since been practiced worldwide as a complementary approach to wellness and relaxation.",
-    "p2": "During a Reiki session, a trained practitioner places their hands lightly on or just above the body, allowing the natural flow of energy to support the body's innate healing processes. Reiki is non-invasive, gentle, and deeply relaxing.",
-    "p3": "As a complementary practice, Reiki works alongside conventional medical care to promote balance, reduce stress, and support overall well-being. It is not a substitute for professional medical treatment, but rather a holistic approach to nurturing harmony between mind, body, and spirit."
+    "title": "A Daring Presence",
+    "philosophyLabel": "The Philosophy",
+    "stillnessTitle": "Essential Stillness",
+    "stillnessDesc": "A curated experience of presence and restoration, designed for those seeking a profound return to the self within the city's pulse.",
+    "p1": "Reiki is an ancient Japanese art of restoration, channeling universal life energy through the intimacy of touch. In our Zürich atelier, we cultivate a space for the daring—those ready to surrender to the profound power of silence and energetic resonance.",
+    "p2": "Our sessions are an invitation to absolute presence. You will experience an elegant transition from cognitive noise to a deep, visceral clarity, allowing your body to reconnect with its most essential, vibrant state.",
+    "p3": "Beyond simple wellness, our practice is a commitment to your internal elegance—mitigating the intensity of urban life and nurturing a harmony that is both powerful and refined."
   },
   "HowItWorks": {
     "title": "How a Session Works",
@@ -33,19 +42,32 @@
   },
   "Benefits": {
     "title": "Benefits & Effects",
+    "benefitsLabel": "The Results",
     "subtitle": "Reiki sessions can bring a wide range of positive effects. While individual experiences vary, here are some of the most commonly reported benefits.",
-    "stressTitle": "Stress Relief",
-    "stressDesc": "Reiki promotes deep relaxation, helping release tension and reduce the physical and emotional effects of stress.",
-    "emotionalTitle": "Emotional Balance",
-    "emotionalDesc": "Sessions can help process difficult emotions, creating a sense of calm and emotional stability.",
-    "sleepTitle": "Better Sleep",
-    "sleepDesc": "Many clients report improved sleep quality and easier ability to relax before bedtime.",
-    "painTitle": "Pain Management",
-    "painDesc": "Reiki may help reduce discomfort and support the body's natural pain management processes.",
-    "clarityTitle": "Mental Clarity",
-    "clarityDesc": "Experience clearer thinking, improved focus, and a greater sense of presence and awareness.",
-    "energyTitle": "Energy Restoration",
-    "energyDesc": "Feel revitalized as Reiki helps restore the natural flow and balance of your body's energy.",
+    "benefit1": {
+      "title": "Stress Relief",
+      "desc": "Reiki promotes deep relaxation, helping release tension and reduce the physical and emotional effects of stress."
+    },
+    "benefit2": {
+      "title": "Emotional Balance",
+      "desc": "Sessions can help process difficult emotions, creating a sense of calm and emotional stability."
+    },
+    "benefit3": {
+      "title": "Better Sleep",
+      "desc": "Many clients report improved sleep quality and easier ability to relax before bedtime."
+    },
+    "benefit4": {
+      "title": "Pain Management",
+      "desc": "Reiki may help reduce discomfort and support the body's natural pain management processes."
+    },
+    "benefit5": {
+      "title": "Mental Clarity",
+      "desc": "Experience clearer thinking, improved focus, and a greater sense of presence and awareness."
+    },
+    "benefit6": {
+      "title": "Energy Restoration",
+      "desc": "Feel revitalized as Reiki helps restore the natural flow and balance of your body's energy."
+    },
     "disclaimer": "Results vary by individual. Reiki is a complementary practice and should not replace professional medical advice."
   },
   "Trust": {
@@ -57,8 +79,11 @@
     "qual3": "Certified by International Reiki Association",
     "bio": "I believe that healing comes from within, and my role is to facilitate that natural process. With deep respect for the Reiki tradition and a commitment to continuous learning, I create a safe, nurturing space for your healing journey.",
     "sessions": "Sessions",
+    "sessionsCount": "200+",
     "experience": "Experience",
-    "certified": "Certified"
+    "experienceCount": "5+",
+    "certified": "Certified",
+    "certifiedLevel": "Master"
   },
   "Pricing": {
     "title": "Pricing & Services",
@@ -138,10 +163,14 @@
     "required": "required",
     "nameError": "Name must be at least 2 characters",
     "emailError": "Please enter a valid email address",
-    "messageError": "Message must be at least 10 characters"
+    "messageError": "Message must be at least 10 characters",
+    "phoneValue": "+41 XX XXX XX XX",
+    "emailValue": "info@reiki-practice.ch"
   },
   "Footer": {
+    "brandName": "The Atelier",
     "tagline": "Professional energy healing sessions to restore balance and promote wellness.",
+    "allRightsReserved": "All rights reserved.",
     "quickLinks": "Quick Links",
     "contact": "Contact",
     "disclaimer": "Reiki is a complementary practice and is not a substitute for professional medical treatment. Please consult your healthcare provider for medical concerns.",
@@ -157,7 +186,8 @@
     "de": "Deutsch",
     "fr": "Français",
     "en": "English",
-    "ru": "Русский"
+    "ru": "Русский",
+    "it": "Italiano"
   },
   "Impressum": {
     "title": "Impressum",

@@ -46,3 +46,13 @@ next-env.d.ts
 
 # windows artifacts
 nul
+
+# local tooling artifacts
+.playwright-mcp/
+.vscode/
+build_log.txt
+
+# local audit screenshots
+audit-*.png
+fix-*.png
+*-full-*.png

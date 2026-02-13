@@ -12,26 +12,26 @@ export default function BookingSection() {
   if (!CALENDLY_URL) return null
 
   return (
-    <section id="booking" className="py-20 bg-white">
+    <section id="booking" className="py-24 md:py-40 bg-primary-100 relative overflow-hidden">
       <div className="section-container">
         <ScrollReveal>
-          <div className="text-center mb-12">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary-900 mb-4">
+          <div className="text-center mb-16">
+            <h2 className="font-heading text-5xl md:text-7xl font-black text-primary-900 mb-8 uppercase tracking-tighter">
               {t('title')}
             </h2>
-            <p className="text-neutral-600 text-lg max-w-2xl mx-auto">{t('subtitle')}</p>
+            <p className="text-primary-900/40 text-xl max-w-2xl mx-auto italic font-serif">{t('subtitle')}</p>
           </div>
         </ScrollReveal>
 
         <ScrollReveal delay={0.1}>
-          <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-lg">
+          <div className="max-w-4xl mx-auto rounded-sm overflow-hidden shadow-2xl border border-black/5">
             <InlineWidget
               url={CALENDLY_URL}
               styles={{ height: '700px', minWidth: '320px' }}
               pageSettings={{
-                primaryColor: '4a90a4',
+                primaryColor: '4a0404',
                 textColor: '1a1a1a',
-                backgroundColor: 'ffffff',
+                backgroundColor: 'f9f5f1',
                 hideLandingPageDetails: true,
                 hideEventTypeDetails: false,
                 hideGdprBanner: true,

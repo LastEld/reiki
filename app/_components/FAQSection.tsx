@@ -2,10 +2,15 @@
 
 import { useState } from 'react'
 import { useTranslations } from 'next-intl'
+import { useHasMounted } from '../_hooks/useHasMounted'
+import ScrollReveal from './ScrollReveal'
+import { FAQItem } from './FAQItem'
+import SplitText from '@/components/ui/split-text'
 
 export default function FAQSection() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null)
   const t = useTranslations('FAQ')
+  const [openIndex, setOpenIndex] = useState<number | null>(null)
+  const mounted = useHasMounted()
 
   const faqs = [
     { question: t('q1'), answer: t('a1') },
@@ -22,45 +27,36 @@ export default function FAQSection() {
   }
 
   return (
-    <section id="faq" className="py-20 bg-white">
+    <section id="faq" className="py-spacing-xl bg-[var(--surface-cream)] relative overflow-hidden">
+      <div className="absolute bottom-0 left-0 aura-bg opacity-10" />
       <div className="section-container">
-        <div className="text-center mb-12">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary-900 mb-4">
-            {t('title')}
-          </h2>
-          <p className="text-neutral-600 text-lg max-w-2xl mx-auto">{t('subtitle')}</p>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-spacing-lg">
+            <SplitText
+              text={t('title')}
+              className="font-heading text-4xl md:text-6xl font-black text-primary-900 mb-8 uppercase tracking-tighter"
+              delay={30}
+              duration={1}
+              tag="h2"
+              textAlign="center"
+            />
+            <p className="text-primary-900/40 text-xl max-w-2xl mx-auto italic font-serif leading-relaxed">
+              {t('subtitle')}
+            </p>
+          </div>
+        </ScrollReveal>
 
-        <div className="max-w-3xl mx-auto space-y-3">
+        <div className="max-w-4xl mx-auto space-y-spacing-sm">
           {faqs.map((faq, index) => (
-            <div key={index} className="border border-neutral-200 rounded-xl overflow-hidden">
-              <button
-                onClick={() => toggle(index)}
-                className="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-neutral-50 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-inset"
-                aria-expanded={openIndex === index}
-              >
-                <span className="font-medium text-primary-900 pr-4">{faq.question}</span>
-                <svg
-                  className={`w-5 h-5 text-neutral-500 shrink-0 transition-transform duration-200 ${
-                    openIndex === index ? 'rotate-180' : ''
-                  }`}
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-
-              <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  openIndex === index ? 'max-h-96' : 'max-h-0'
-                }`}
-              >
-                <div className="px-6 pb-5 text-neutral-600 leading-relaxed">{faq.answer}</div>
-              </div>
-            </div>
+            <ScrollReveal key={index} delay={index * 0.05} direction="none">
+              <FAQItem
+                faq={faq}
+                index={index}
+                openIndex={openIndex}
+                toggle={toggle}
+                mounted={mounted}
+              />
+            </ScrollReveal>
           ))}
         </div>
       </div>

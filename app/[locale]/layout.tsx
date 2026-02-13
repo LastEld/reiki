@@ -1,12 +1,25 @@
 import type { Metadata } from 'next'
 import { NextIntlClientProvider, hasLocale } from 'next-intl'
-import { getTranslations, setRequestLocale } from 'next-intl/server'
+import { setRequestLocale } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { routing } from '@/i18n/routing'
+import { Playfair_Display, Inter } from 'next/font/google'
 import Header from '../_components/Header'
 import Footer from '../_components/Footer'
 import CookieConsent from '../_components/CookieConsent'
 import Analytics from '../_components/Analytics'
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-playfair',
+  display: 'swap',
+})
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+})
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }))
@@ -65,6 +78,19 @@ const localeMetadata: Record<string, { title: string; description: string; keywo
       'Рейки Швейцария',
     ],
   },
+  it: {
+    title: 'Seduta Reiki Zurigo | Guarigione energetica e equilibrio interiore',
+    description:
+      'Sedute professionali di Reiki a Zurigo. Praticante certificato per ridurre lo stress, ripristinare l\'equilibrio e favorire il benessere.',
+    keywords: [
+      'Reiki Zurigo',
+      'seduta Reiki',
+      'guarigione energetica',
+      'riduzione stress',
+      'benessere olistico',
+      'Reiki Svizzera',
+    ],
+  },
 }
 
 export async function generateMetadata({
@@ -118,11 +144,13 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <NextIntlClientProvider>
-      <Analytics />
-      <Header />
-      <main>{children}</main>
-      <Footer />
-      <CookieConsent />
+      <div lang={locale} className={`${playfair.variable} ${inter.variable} font-sans relative min-h-screen bg-primary-50`}>
+        <Analytics />
+        <Header />
+        <main>{children}</main>
+        <Footer />
+        <CookieConsent />
+      </div>
     </NextIntlClientProvider>
   )
 }

@@ -11,7 +11,7 @@ export default function LanguageSwitcher() {
   const t = useTranslations('LanguageSwitcher')
 
   const switchLocale = (newLocale: string) => {
-    router.replace(pathname, { locale: newLocale as 'de' | 'fr' | 'en' | 'ru' })
+    router.replace(pathname, { locale: newLocale as 'de' | 'fr' | 'en' | 'ru' | 'it' })
   }
 
   return (
@@ -20,11 +20,10 @@ export default function LanguageSwitcher() {
         <button
           key={loc}
           onClick={() => switchLocale(loc)}
-          className={`px-2 py-1 text-xs rounded transition-colors ${
-            locale === loc
+          className={`px-2 py-1 text-xs rounded transition-colors ${locale === loc
               ? 'bg-primary-600 text-white'
               : 'text-neutral-600 hover:text-primary-600 hover:bg-primary-50'
-          }`}
+            }`}
           aria-label={t(loc)}
         >
           {loc.toUpperCase()}

@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl'
 import ScrollReveal from './ScrollReveal'
+import SplitText from '@/components/ui/split-text'
 
 export default function HowItWorksSection() {
   const t = useTranslations('HowItWorks')
@@ -14,26 +15,31 @@ export default function HowItWorksSection() {
   ]
 
   return (
-    <section id="how-it-works" className="py-20 bg-surface-white">
+    <section id="how-it-works" className="py-spacing-section bg-[var(--surface-paper)]">
       <div className="section-container">
         <ScrollReveal>
-          <div className="text-center mb-12">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary-900 mb-4">
-              {t('title')}
-            </h2>
-            <p className="max-w-3xl mx-auto text-neutral-600 text-lg">{t('subtitle')}</p>
+          <div className="text-center mb-spacing-lg">
+            <SplitText
+              text={t('title')}
+              className="font-heading text-4xl md:text-6xl font-black text-primary-900 mb-6 tracking-tighter uppercase"
+              delay={30}
+              duration={1}
+              tag="h2"
+              textAlign="center"
+            />
+            <p className="max-w-3xl mx-auto text-neutral-500 text-xl font-light tracking-tight">{t('subtitle')}</p>
           </div>
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-spacing-md">
           {steps.map((step) => (
             <ScrollReveal key={step.number} delay={step.number * 0.1}>
-              <div className="bg-white border border-neutral-200 rounded-lg p-6 hover:shadow-lg hover:border-primary-300 transition-all duration-200 h-full">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary-500 text-white font-bold text-xl mb-4">
+              <div className="bg-white border border-neutral-100 rounded-editorial-lg p-8 hover:shadow-2xl transition-all duration-500 h-full premium-shadow flex flex-col group">
+                <div className="flex items-center justify-center w-14 h-14 rounded-editorial-md bg-primary-100 text-primary-700 font-bold text-2xl mb-6 group-hover:bg-primary-600 group-hover:text-white transition-all duration-500 shadow-inner">
                   {step.number}
                 </div>
-                <h3 className="font-semibold text-lg text-primary-900 mb-2">{step.title}</h3>
-                <p className="text-neutral-600 leading-relaxed">{step.description}</p>
+                <h3 className="font-heading text-xl font-bold text-primary-900 mb-3">{step.title}</h3>
+                <p className="text-neutral-600 leading-relaxed font-light">{step.description}</p>
               </div>
             </ScrollReveal>
           ))}

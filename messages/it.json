@@ -1,0 +1,217 @@
+{
+    "Header": {
+        "about": "Su di me",
+        "howItWorks": "Metodologia",
+        "benefits": "Vantaggi",
+        "pricing": "Prezzi",
+        "faq": "FAQ",
+        "contact": "Contatti",
+        "cta": "Prenota ora",
+        "brandName": "L'Atelier",
+        "openMenu": "Apri menu",
+        "closeMenu": "Chiudi menu"
+    },
+    "Hero": {
+        "title": "L'Arte della Decompressione Profonda",
+        "subtitle": "Scopri un silenzio audace. Eleganti sessioni di Reiki progettate per dissolvere i confini e ripristinare la tua armonia viscerale nel cuore di Zurigo.",
+        "cta": "Sperimenta la Quiete",
+        "atelierLabel": "L'Atelier delle Arti Restorative",
+        "methodology": "La Metodologia",
+        "scrollToBreathe": "Scorri per Respirare"
+    },
+    "About": {
+        "title": "Una Presenza Audace",
+        "philosophyLabel": "La Filosofia",
+        "stillnessTitle": "Quiete Essenziale",
+        "stillnessDesc": "Un'esperienza curata di presenza e restauro, progettata per chi cerca un profondo ritorno a se stessi nel cuore della città.",
+        "p1": "Il Reiki è un'antica arte giapponese di restauro, che incanala l'energia vitale universale attraverso l'intimità del tocco. Nel nostro atelier di Zurigo, coltiviamo uno spazio per gli audaci – pronti ad arrendersi al profondo potere del silenzio.",
+        "p2": "Le nostre sessioni sono un invito alla presenza assoluta. Sperimenterai un elegante passaggio dal rumore cognitivo a una profonda chiarezza viscerale, permettendo al tuo corpo di riconnettersi con il suo stato più essenziale.",
+        "p3": "Oltre il semplice benessere, la nostra pratica è un impegno per la tua eleganza interiore – mitigando l'intensità della vita urbana e nutrendo un'armonia che è allo stesso tempo potente e raffinata."
+    },
+    "HowItWorks": {
+        "title": "La Metodologia",
+        "subtitle": "Un approccio strutturato al tuo benessere",
+        "step1Title": "Consultazione",
+        "step1Desc": "Iniziamo con un colloquio per comprendere le tue esigenze e i tuoi obiettivi di salute.",
+        "step2Title": "Sessione Reiki",
+        "step2Desc": "Ti sdraierai comodamente mentre l'energia viene canalizzata delicatamente verso i centri energetici del corpo.",
+        "step3Title": "Integrazione",
+        "step3Desc": "Prendiamo un momento dopo la sessione per discutere le sensazioni e integrare l'esperienza.",
+        "step4Title": "Piano di Benessere",
+        "step4Desc": "Consigli personalizzati per mantenere l'equilibrio e decidere i passi successivi."
+    },
+    "Benefits": {
+        "title": "Vantaggi del Reiki",
+        "benefitsLabel": "I Risultati",
+        "subtitle": "Le sessioni di Reiki possono apportare una vasta gamma di effetti positivi. Sebbene le esperienze individuali varino, ecco i benefici più comunemente riportati.",
+        "benefit1": {
+            "title": "Riduzione dello Stress",
+            "desc": "Il Reiki favorisce un profondo rilassamento, aiutando a sciogliere le tensioni e a ridurre gli effetti fisici ed emotivi dello stress."
+        },
+        "benefit2": {
+            "title": "Equilibrio Emotivo",
+            "desc": "Le sessioni possono aiutare a elaborare le emozioni difficili, creando un senso di calma e stabilità emotiva."
+        },
+        "benefit3": {
+            "title": "Migliore Sonno",
+            "desc": "Molti clienti riferiscono una migliore qualità del sonno e una maggiore facilità nel rilassarsi prima di coricarsi."
+        },
+        "benefit4": {
+            "title": "Gestione del Dolore",
+            "desc": "Il Reiki può aiutare a ridurre il disagio e sostenere i naturali processi di gestione del dolore del corpo."
+        },
+        "benefit5": {
+            "title": "Chiarezza Mentale",
+            "desc": "Sperimenta un pensiero più chiaro, una migliore concentrazione e un maggior senso di presenza e consapevolezza."
+        },
+        "benefit6": {
+            "title": "Ripristino dell'Energia",
+            "desc": "Sentiti rivitalizzato mentre il Reiki aiuta a ripristinare il flusso naturale e l'equilibrio dell'energia del tuo corpo."
+        },
+        "disclaimer": "I risultati variano da individuo a individuo. Il Reiki è una pratica complementare e non deve sostituire la consulenza medica professionale."
+    },
+    "Trust": {
+        "title": "La tua Guida Energetica",
+        "name": "Oleg",
+        "role": "Praticante Reiki Certificato",
+        "qual1": "Usui Reiki Livello III / Master",
+        "qual2": "Oltre 5 anni di esperienza pratica",
+        "qual3": "Certificato dalla International Reiki Association",
+        "bio": "Credo che la guarigione venga dall'interno e il mio ruolo è facilitare questo processo naturale. Con profondo rispetto per la tradizione Reiki e l'impegno per l'apprendimento continuo, creo uno spazio sicuro e nutriente per il tuo viaggio di guarigione.",
+        "sessions": "Sessioni",
+        "sessionsCount": "200+",
+        "experience": "Esperienza",
+        "experienceCount": "5+",
+        "certified": "Certificato",
+        "certifiedLevel": "Master"
+    },
+    "Pricing": {
+        "title": "Investi nel tuo Benessere",
+        "subtitle": "Scegli l'opzione che meglio si adatta alle tue esigenze",
+        "singleName": "Sessione Singola",
+        "singleDuration": "60 minuti",
+        "singleF1": "Sessione Reiki completa",
+        "singleF2": "Consultazione iniziale",
+        "singleF3": "Consulenza post-sessione",
+        "courseName": "Pacchetto da 3",
+        "courseBadge": "Miglior Offerta",
+        "courseSavings": "Risparmia il 15%",
+        "courseDuration": "60 minuti ciascuna",
+        "courseF1": "Tutto quello della sessione singola",
+        "courseF2": "Piano di trattamento personalizzato",
+        "courseF3": "Monitoraggio dei progressi tra le sessioni",
+        "courseF4": "Programmazione prioritaria",
+        "intensiveName": "Programma Intensivo",
+        "intensiveDuration": "5 sessioni + follow-up",
+        "intensiveF1": "Tutto quello del pacchetto da 3",
+        "intensiveF2": "Valutazione iniziale estesa",
+        "intensiveF3": "Protocollo di guarigione personalizzato",
+        "intensiveF4": "Supporto e-mail tra le sessioni",
+        "intensiveF5": "Consultazione di follow-up",
+        "bookNow": "Prenota ora",
+        "note": "Tutti i prezzi includono la consultazione. Le sessioni del pacchetto possono essere utilizzate entro 3 mesi."
+    },
+    "FAQ": {
+        "title": "Domande Frequenti",
+        "subtitle": "Trovate risposte alle domande più comuni sulla guarigione Reiki e su cosa aspettarvi.",
+        "q1": "Cos'è il Reiki e come funziona?",
+        "a1": "Il Reiki è una tecnica giapponese di guarigione energetica sviluppata all'inizio del XX secolo. Durante una sessione, il praticante posiziona le mani leggermente sul corpo o appena sopra di esso per incanalare l'energia vitale universale. Questo processo dolce favorisce il rilassamento, riduce lo stress e supporta i naturali processi di guarigione del corpo.",
+        "q2": "Cosa devo aspettarmi durante la mia prima sessione?",
+        "a2": "La prima sessione inizia con una breve consultazione per discutere i tuoi obiettivi e eventuali dubbi. Rimarrai completamente vestito e ti sdraierai comodamente su un lettino da trattamento. La sessione dura circa 60 minuti, durante i quali potresti sentire calore, formicolio o un profondo rilassamento. Molte persone si sentono calme e rinfrescate dopo.",
+        "q3": "Di quante sessioni ho bisogno?",
+        "a3": "Il numero di sessioni varia a seconda dei tuoi obiettivi. Alcune persone sentono benefici significativi dopo una singola sessione, mentre altre preferiscono sessioni regolari per un benessere continuo. In genere consiglio di iniziare con 3 sessioni per sperimentare appieno i benefici, e discuteremo un piano personalizzato durante la consultazione.",
+        "q4": "Il Reiki è sicuro? Ci sono effetti collaterali?",
+        "a4": "Il Reiki è una pratica non invasiva e dolce, considerata sicura per persone di tutte le età. Non sono noti effetti collaterali negativi. Alcune persone possono sperimentare un leggero rilascio emotivo o sentirsi temporaneamente stanche dopo una sessione, il che è una parte normale della risposta di rilassamento del corpo.",
+        "q5": "Il Reiki può sostituire il trattamento medico?",
+        "a5": "No. Il Reiki è una pratica complementare che lavora a fianco del trattamento medico convenzionale, non come sostituto. Può supportare il tuo benessere generale e aiutare a gestire lo stress, ma dovresti sempre consultare il tuo medico per problemi di salute.",
+        "q6": "Come mi preparo per una sessione?",
+        "a6": "Indossa abiti comodi e larghi. Evita pasti pesanti o caffeina poco prima della sessione. Vieni con mente aperta e sii pronto a rilassarti. È utile bere acqua prima e dopo la sessione per supportare i processi naturali del tuo corpo.",
+        "q7": "Offrite sessioni di Reiki online o a distanza?",
+        "a7": "Attualmente, tutte le sessioni sono offerte di persona presso il mio studio a Zurigo. Le sessioni di persona permettono il lavoro energetico più efficace e la migliore esperienza sia per i nuovi clienti che per quelli abituali."
+    },
+    "Booking": {
+        "title": "Prenota la tua Sessione",
+        "subtitle": "Scegli l'orario che preferisci. La prima consultazione è gratuita."
+    },
+    "Contact": {
+        "title": "Contattami",
+        "subtitle": "Hai domande o sei pronto a prenotare la tua prima sessione? Invia un messaggio e ti risponderò entro 24 ore.",
+        "nameLabel": "Nome",
+        "namePlaceholder": "Il tuo nome completo",
+        "emailLabel": "Email",
+        "emailPlaceholder": "tua@email.com",
+        "phoneLabel": "Telefono",
+        "phoneOptional": "(opzionale)",
+        "phonePlaceholder": "+41 XX XXX XX XX",
+        "messageLabel": "Messaggio",
+        "messagePlaceholder": "Raccontami cosa stai cercando...",
+        "send": "Invia Messaggio",
+        "sending": "Invio in corso...",
+        "successTitle": "Messaggio Inviato!",
+        "successMessage": "Grazie per avermi contattato. Ti risponderò entro 24 ore.",
+        "sendAnother": "Invia un altro messaggio",
+        "errorMessage": "Qualcosa è andato storto. Per favore riprova o contattami direttamente.",
+        "contactInfo": "Informazioni di Contatto",
+        "location": "Zurigo, Svizzera",
+        "hours": "Orari di Apertura",
+        "monFri": "Lunedì - Venerdì",
+        "saturday": "Sabato",
+        "sunday": "Domenica",
+        "closed": "Chiuso",
+        "firstTimeTitle": "Prima volta?",
+        "firstTimeDesc": "La tua prima consultazione è gratuita. Discuteremo i tuoi obiettivi e cosa aspettarti da una sessione di Reiki, senza impegno.",
+        "required": "richiesto",
+        "nameError": "Il nome deve essere di almeno 2 caratteri",
+        "emailError": "Inserisci un indirizzo email valido",
+        "messageError": "Il messaggio deve essere di almeno 10 caratteri",
+        "phoneValue": "+41 XX XXX XX XX",
+        "emailValue": "info@reiki-practice.ch"
+    },
+    "Footer": {
+        "brandName": "L'Atelier",
+        "allRightsReserved": "Tutti i diritti riservati.",
+        "tagline": "Guarigione Reiki olistica per il profondo rilassamento, l'equilibrio emotivo e il benessere fisico a Zurigo.",
+        "quickLinks": "Link Rapidi",
+        "contact": "Contatto",
+        "disclaimer": "Il Reiki è una pratica complementare e non sostituisce il trattamento medico professionale. Si prega di consultare il proprio medico per dubbi medici.",
+        "impressum": "Note Legali",
+        "privacy": "Privacy Policy"
+    },
+    "Cookie": {
+        "message": "Utilizziamo i cookie per analizzare il traffico del sito e migliorare la tua esperienza. Accettando, acconsenti al nostro utilizzo dei cookie analitici in conformità con la LPD e il GDPR.",
+        "accept": "Accetta",
+        "decline": "Rifiuta"
+    },
+    "LanguageSwitcher": {
+        "de": "Deutsch",
+        "fr": "Français",
+        "en": "English",
+        "ru": "Русский",
+        "it": "Italiano"
+    },
+    "Impressum": {
+        "title": "Note Legali (Impressum)",
+        "operatorTitle": "Gestore del sito",
+        "disclaimerTitle": "Esclusione di responsabilità",
+        "disclaimerText": "Il Reiki è una pratica complementare e non sostituisce il trattamento medico professionale. Tutti i contenuti di questo sito sono a solo scopo informativo e non costituiscono consulenza medica.",
+        "liabilityTitle": "Responsabilità",
+        "liabilityText": "Il gestore di questo sito non si assume alcuna responsabilità per l'accuratezza, la completezza o l'attualità delle informazioni fornite. Le richieste di risarcimento contro il gestore sono escluse, a meno che non siano causate da dolo o colpa grave.",
+        "copyrightTitle": "Copyright",
+        "copyrightText": "I contenuti e le opere di questo sito sono soggetti alla legge sul diritto d'autore. La riproduzione, l'editing, la distribuzione o qualsiasi forma di utilizzo oltre l'ambito della legge sul diritto d'autore richiede il consenso scritto."
+    },
+    "Privacy": {
+        "title": "Informativa sulla Privacy",
+        "introTitle": "Introduzione",
+        "introText": "Questa informativa sulla privacy spiega come raccogliamo, utilizziamo e proteggiamo i tuoi dati personali in conformità con la Legge federale svizzera sulla protezione dei dati (LPD/nLPD) e il Regolamento generale sulla protezione dei dati (RGPD) dell'UE.",
+        "collectionTitle": "Raccolta dati",
+        "collectionText": "Raccogliamo dati personali solo quando li fornisci volontariamente tramite il nostro modulo di contatto (nome, email, telefono, messaggio). Questi dati vengono utilizzati esclusivamente per rispondere alla tua richiesta e non vengono condivisi con terze parti.",
+        "cookiesTitle": "Cookie",
+        "cookiesText": "Utilizziamo i cookie analitici solo con il tuo esplicito consenso. Puoi rifiutare i cookie in qualsiasi momento tramite il banner dei cookie. I cookie essenziali richiesti per la funzionalità del sito non richiedono il consenso.",
+        "analyticsTitle": "Analisi",
+        "analyticsText": "Con il tuo consenso, utilizziamo Google Analytics per capire come i visitatori interagiscono con il nostro sito. Questi dati sono anonimizzati e utilizzati solo per migliorare i nostri servizi. Puoi revocare il consenso in qualsiasi momento.",
+        "rightsTitle": "I tuoi diritti",
+        "rightsText": "Ai sensi della LPD e del RGPD, hai il diritto di accedere, correggere o cancellare i tuoi dati personali. Puoi anche opporti al trattamento dei dati o richiedere la portabilità dei dati. Per esercitare questi diritti, contattaci utilizzando le informazioni fornite di seguito.",
+        "contactTitle": "Contatti",
+        "contactText": "Per domande sulla protezione dei dati o per esercitare i tuoi diritti, ti preghiamo di contattarci:"
+    }
+}
