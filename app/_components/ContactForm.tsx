@@ -5,7 +5,7 @@ import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
-import { Send, Loader2, AlertCircle } from 'lucide-react'
+import { Send, Loader2, AlertCircle } from '@/components/icons'
 
 const contactSchema = z.object({
     name: z.string().min(2),

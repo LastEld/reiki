@@ -3,7 +3,7 @@
 import { useRef } from 'react'
 import { useTranslations } from 'next-intl'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import { Sparkles } from 'lucide-react'
+import { Sparkles } from '@/components/icons'
 import { useHasMounted } from '../_hooks/useHasMounted'
 import SplitText from '@/components/ui/split-text'
 import SpotlightCard from '@/components/ui/spotlight-card'

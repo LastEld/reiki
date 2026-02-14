@@ -1,7 +1,7 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
-import { Award, Shield, Heart } from 'lucide-react'
+import { Award, Shield, Heart } from '@/components/icons'
 import { useHasMounted } from '../_hooks/useHasMounted'
 import ScrollReveal from './ScrollReveal'
 import SpotlightCard from '@/components/ui/spotlight-card'

@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { motion, AnimatePresence } from 'framer-motion'
-import { CheckCircle2 } from 'lucide-react'
+import { CheckCircle2 } from '@/components/icons'
 import { useHasMounted } from '../_hooks/useHasMounted'
 import { submitContactForm } from '../actions/contact'
 import ScrollReveal from './ScrollReveal'

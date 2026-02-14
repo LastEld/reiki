@@ -2,11 +2,11 @@
 
 import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
-import { Heart, Zap, Shield, Sparkles, Wind, Moon, LucideIcon } from 'lucide-react'
+import { Heart, Zap, Shield, Sparkles, Wind, Moon, IconComponent } from '@/components/icons'
 import { useHasMounted } from '../_hooks/useHasMounted'
 import TiltedCard from '@/components/ui/tilted-card'
 
-const BenefitCard = ({ title, description, icon: Icon, index }: { title: string, description: string, icon: LucideIcon, index: number }) => {
+const BenefitCard = ({ title, description, icon: Icon, index }: { title: string, description: string, icon: IconComponent, index: number }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}

@@ -1,0 +1,16 @@
+export { Heart } from './Heart'
+export { Zap } from './Zap'
+export { Shield } from './Shield'
+export { Sparkles } from './Sparkles'
+export { Wind } from './Wind'
+export { Moon } from './Moon'
+export { Send } from './Send'
+export { Loader2 } from './Loader2'
+export { AlertCircle } from './AlertCircle'
+export { CheckCircle2 } from './CheckCircle2'
+export { Menu } from './Menu'
+export { X } from './X'
+export { Check } from './Check'
+export { Award } from './Award'
+
+export type IconComponent = React.FC<React.SVGProps<SVGSVGElement> & { className?: string }>

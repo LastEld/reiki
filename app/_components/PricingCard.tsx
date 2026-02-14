@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Check } from 'lucide-react'
+import { Check } from '@/components/icons'
 import CTAButton from './CTAButton'
 import SpotlightCard from '@/components/ui/spotlight-card'
 
